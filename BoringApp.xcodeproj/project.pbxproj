@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		944BA48E26FB524800523C91 /* BAAdviceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944BA48D26FB524800523C91 /* BAAdviceCardView.swift */; };
+		949B9E8926FB5DDC00DC892E /* BATagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949B9E8826FB5DDC00DC892E /* BATagView.swift */; };
 		94FB68D726FA415700CBCD91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB68D626FA415700CBCD91 /* AppDelegate.swift */; };
 		94FB68D926FA415700CBCD91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB68D826FA415700CBCD91 /* SceneDelegate.swift */; };
-		94FB68DB26FA415700CBCD91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB68DA26FA415700CBCD91 /* ViewController.swift */; };
+		94FB68DB26FA415700CBCD91 /* AdviceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB68DA26FA415700CBCD91 /* AdviceVC.swift */; };
 		94FB68DE26FA415700CBCD91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FB68DC26FA415700CBCD91 /* Main.storyboard */; };
 		94FB68E026FA415900CBCD91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FB68DF26FA415900CBCD91 /* Assets.xcassets */; };
 		94FB68E326FA415900CBCD91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FB68E126FA415900CBCD91 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		944BA48D26FB524800523C91 /* BAAdviceCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAAdviceCardView.swift; sourceTree = "<group>"; };
+		949B9E8826FB5DDC00DC892E /* BATagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BATagView.swift; sourceTree = "<group>"; };
 		94FB68D326FA415700CBCD91 /* BoringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FB68D626FA415700CBCD91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94FB68D826FA415700CBCD91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		94FB68DA26FA415700CBCD91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94FB68DA26FA415700CBCD91 /* AdviceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceVC.swift; sourceTree = "<group>"; };
 		94FB68DD26FA415700CBCD91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94FB68DF26FA415900CBCD91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94FB68E226FA415900CBCD91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,8 +62,10 @@
 			children = (
 				94FB68D626FA415700CBCD91 /* AppDelegate.swift */,
 				94FB68D826FA415700CBCD91 /* SceneDelegate.swift */,
-				94FB68DA26FA415700CBCD91 /* ViewController.swift */,
+				94FB68DA26FA415700CBCD91 /* AdviceVC.swift */,
 				94FB68DC26FA415700CBCD91 /* Main.storyboard */,
+				944BA48D26FB524800523C91 /* BAAdviceCardView.swift */,
+				949B9E8826FB5DDC00DC892E /* BATagView.swift */,
 				94FB68DF26FA415900CBCD91 /* Assets.xcassets */,
 				94FB68E126FA415900CBCD91 /* LaunchScreen.storyboard */,
 				94FB68E426FA415900CBCD91 /* Info.plist */,
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94FB68DB26FA415700CBCD91 /* ViewController.swift in Sources */,
+				94FB68DB26FA415700CBCD91 /* AdviceVC.swift in Sources */,
 				94FB68D726FA415700CBCD91 /* AppDelegate.swift in Sources */,
 				94FB68D926FA415700CBCD91 /* SceneDelegate.swift in Sources */,
+				949B9E8926FB5DDC00DC892E /* BATagView.swift in Sources */,
+				944BA48E26FB524800523C91 /* BAAdviceCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8797A8DV4;
 				INFOPLIST_FILE = BoringApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8797A8DV4;
 				INFOPLIST_FILE = BoringApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
