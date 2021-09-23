@@ -171,6 +171,9 @@
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" image="arrow.counterclockwise" catalog="system" imageContentMode="scaleAspectFit"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="refreshActivity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="joa-Dc-HP6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -187,8 +190,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="adviceCardTextField" destination="4bH-9J-Iy3" id="Pcv-Ue-jc6"/>
                         <outlet property="adviceCardView" destination="QEF-xi-lhE" id="dah-sS-mlo"/>
+                        <outlet property="costLabel" destination="SSt-dZ-HpE" id="LyF-lr-0VL"/>
+                        <outlet property="numberOfParticipantsLabel" destination="waA-hE-xrI" id="tcD-Ys-K8y"/>
                         <outlet property="tagView" destination="wjg-3S-1WK" id="m5N-Qk-lNe"/>
+                        <outlet property="typeLabel" destination="0nI-bo-YKz" id="mF5-B7-mQ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
