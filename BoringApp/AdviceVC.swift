@@ -15,17 +15,10 @@ class AdviceVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureAdviceCardView()
-        configureBATagView()
     }
 
     private func configureAdviceCardView() {
         adviceCardView.layer.cornerCurve = .continuous
-        adviceCardView.layer.shadowPath = UIBezierPath(rect: adviceCardView.bounds).cgPath
-    }
-    
-    private func configureBATagView() {
-        tagView.layer.cornerCurve = .continuous
-        tagView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMinYCorner]
     }
 }
 

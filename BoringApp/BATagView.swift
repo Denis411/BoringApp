@@ -6,11 +6,34 @@
 //
 
 import UIKit
+import SwiftUI
 
 @IBDesignable class BATagView: UIView {
     
     @IBInspectable var cornerRadius: CGFloat {
         get { return layer.cornerRadius }
-        set { layer.cornerRadius = newValue }
+        set {
+            layer.cornerCurve = .continuous
+            layer.cornerRadius = newValue
+        }
+    }
+    
+    @IBInspectable var maskedCorners: Bool {
+        get {
+            if !layer.maskedCorners.isEmpty {
+                return false
+            } else {
+                return true
+            }
+        }
+        set { layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMinYCorner] }
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
     }
 }

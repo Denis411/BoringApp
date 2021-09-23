@@ -57,9 +57,10 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="22"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskedCorners" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="Watch a Khan Academy lecture on a subject of your choosing" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bH-9J-Iy3">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Watch a Khan Academy lecture on a subject of your choosing" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bH-9J-Iy3">
                                         <rect key="frame" x="8" y="62" width="358" height="396"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
@@ -140,20 +141,20 @@
                                     <constraint firstItem="4bH-9J-Iy3" firstAttribute="top" secondItem="wjg-3S-1WK" secondAttribute="bottom" constant="16" id="ahP-1Q-WSS"/>
                                     <constraint firstItem="wjg-3S-1WK" firstAttribute="top" secondItem="QEF-xi-lhE" secondAttribute="top" id="eXh-Yl-BI9"/>
                                     <constraint firstAttribute="width" secondItem="QEF-xi-lhE" secondAttribute="height" multiplier="2.8:4" id="kRA-Ud-m0k"/>
-                                    <constraint firstItem="Xdb-IV-gfd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4bH-9J-Iy3" secondAttribute="bottom" constant="8" id="kmE-Cj-Ele"/>
+                                    <constraint firstItem="Xdb-IV-gfd" firstAttribute="top" secondItem="4bH-9J-Iy3" secondAttribute="bottom" constant="8" id="kmE-Cj-Ele"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                        <real key="value" value="10"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
                                         <real key="value" value="0.29999999999999999"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="0.0" height="0.0"/>
+                                        <size key="value" width="0.0" height="6"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="22"/>
@@ -194,15 +195,30 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
-        <!--View Controller-->
+        <!--FilterVC-->
         <scene sceneID="mDb-1J-cYe">
             <objects>
-                <viewController id="hOv-Ao-71y" sceneMemberID="viewController">
+                <viewController id="hOv-Ao-71y" customClass="FilterVC" customModule="BoringApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4fa-pP-nyL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQ0-rb-oE5">
+                                <rect key="frame" x="40" y="46" width="47" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Hf8-xo-QA9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zBr-QC-zJm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WQ0-rb-oE5" firstAttribute="leading" secondItem="zBr-QC-zJm" secondAttribute="leading" constant="40" id="cGw-HK-Jn3"/>
+                            <constraint firstItem="WQ0-rb-oE5" firstAttribute="top" secondItem="zBr-QC-zJm" secondAttribute="top" constant="46" id="jnt-iD-QzW"/>
+                            <constraint firstItem="zBr-QC-zJm" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="WQ0-rb-oE5" secondAttribute="trailing" constant="327" id="wbt-ay-jlR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyC-SA-i36" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
