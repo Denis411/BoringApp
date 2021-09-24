@@ -14,7 +14,7 @@ class NetworkManager {
     
     private init() {}
     
-    func getActivity(completed: @escaping (Result<Activity, BAError>) -> Void) {
+    public func getActivity(completed: @escaping (Result<Activity, BAError>) -> Void) {
         guard let url = URL(string: baseURL) else {
             completed(.failure(.invalidRequest))
             return
