@@ -20,11 +20,11 @@ class AdviceVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //TODO:- подумать о лучшем варианте
-        clearUI()
-        
-        configureAdviceCardView()
         getActivity()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        clearUIOnStart()
     }
     
     @IBAction func refreshActivity(_ sender: UIButton) {
@@ -52,17 +52,11 @@ class AdviceVC: UIViewController {
         }
     }
     
-    private func clearUI() {
-        DispatchQueue.main.async {
-            self.typeLabel.text = ""
-            self.adviceCardTextField.text = ""
-            self.numberOfParticipantsLabel.text = ""
-            self.costLabel.text = ""
-        }
-    }
-
-    private func configureAdviceCardView() {
-        adviceCardView.layer.cornerCurve = .continuous
+    private func clearUIOnStart() {
+        self.typeLabel.text = ""
+        self.adviceCardTextField.text = ""
+        self.numberOfParticipantsLabel.text = ""
+        self.costLabel.text = ""
     }
     
     private func getActivity() {
@@ -73,7 +67,7 @@ class AdviceVC: UIViewController {
             case .success(let activity):
                 self.updateUIElements(with: activity)
             case .failure(let error):
-                print(error)
+                print(error.rawValue)
             }
         }
     }

@@ -14,6 +14,10 @@ import UIKit
         set { layer.cornerRadius = newValue }
     }
     
+    @IBInspectable var cornerCurve: Bool = true {
+        didSet { layer.cornerCurve = .continuous }
+    }
+    
     @IBInspectable var shadowRadius: CGFloat {
         get { return layer.shadowRadius }
         set { layer.shadowRadius = newValue }

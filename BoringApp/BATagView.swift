@@ -12,28 +12,14 @@ import SwiftUI
     
     @IBInspectable var cornerRadius: CGFloat {
         get { return layer.cornerRadius }
-        set {
-            layer.cornerCurve = .continuous
-            layer.cornerRadius = newValue
-        }
+        set { layer.cornerRadius = newValue }
     }
     
-    @IBInspectable var maskedCorners: Bool {
-        get {
-            if !layer.maskedCorners.isEmpty {
-                return false
-            } else {
-                return true
-            }
-        }
-        set { layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMinYCorner] }
+    @IBInspectable var cornerCurve: Bool = true {
+        didSet { layer.cornerCurve = .continuous }
     }
     
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    @IBInspectable var maskedCorners: Bool = true {
+        didSet { layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMinYCorner] }
     }
 }

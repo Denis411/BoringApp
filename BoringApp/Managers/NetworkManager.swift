@@ -16,7 +16,7 @@ class NetworkManager {
     
     func getActivity(completed: @escaping (Result<Activity, BAError>) -> Void) {
         guard let url = URL(string: baseURL) else {
-            completed(.failure(.noActivity))
+            completed(.failure(.invalidRequest))
             return
         }
         
@@ -41,7 +41,7 @@ class NetworkManager {
                 let activity = try decoder.decode(Activity.self, from: data)
                 completed(.success(activity))
             } catch {
-                completed(.failure(.invalidData))
+                completed(.failure(.noActivity))
             }
         }
         
