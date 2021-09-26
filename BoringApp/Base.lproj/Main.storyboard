@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="AdviceVC" customModule="BoringApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlz-6c-Ay6">
-                                <rect key="frame" x="344" y="60" width="50" height="50"/>
+                                <rect key="frame" x="250" y="16" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="E6M-02-5jN"/>
                                     <constraint firstAttribute="height" constant="50" id="I0U-Ht-npk"/>
@@ -30,11 +30,11 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="hOv-Ao-71y" kind="presentation" id="rfN-pa-1Ya"/>
+                                    <segue destination="hOv-Ao-71y" kind="presentation" identifier="showFilter" id="rfN-pa-1Ya"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEF-xi-lhE" customClass="BAAdviceCardView" customModule="BoringApp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="181" width="374" height="534"/>
+                                <rect key="frame" x="20" y="84" width="280" height="400"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjg-3S-1WK" customClass="BATagView" customModule="BoringApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="148.5" height="46"/>
@@ -61,17 +61,17 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Watch a Khan Academy lecture on a subject of your choosing" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bH-9J-Iy3">
-                                        <rect key="frame" x="8" y="62" width="358" height="396"/>
+                                        <rect key="frame" x="8" y="62" width="264" height="262"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xdb-IV-gfd">
-                                        <rect key="frame" x="8" y="466" width="358" height="60"/>
+                                        <rect key="frame" x="8" y="332" width="264" height="60"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qh6-WR-7Yu">
-                                                <rect key="frame" x="0.0" y="0.0" width="175" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="60"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eFA-a7-l0F">
                                                         <rect key="frame" x="4" y="7.5" width="48" height="45"/>
@@ -98,16 +98,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kbt-WS-Ob5">
-                                                <rect key="frame" x="183" y="0.0" width="175" height="60"/>
+                                                <rect key="frame" x="136" y="0.0" width="128" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="free" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSt-dZ-HpE">
-                                                        <rect key="frame" x="110.5" y="9.5" width="56.5" height="41"/>
+                                                        <rect key="frame" x="63.5" y="9.5" width="56.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollarsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-hW-DsA">
-                                                        <rect key="frame" x="58.5" y="6.5" width="48" height="47"/>
+                                                        <rect key="frame" x="11.5" y="6.5" width="48" height="47"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="48" id="bPd-5m-6rE"/>
@@ -163,7 +163,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXY-Oa-ZI1">
-                                <rect key="frame" x="182" y="802" width="50" height="50"/>
+                                <rect key="frame" x="135" y="508" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="a1L-ne-Siv"/>
                                     <constraint firstAttribute="width" constant="50" id="lKa-tz-Ym4"/>
@@ -208,7 +208,7 @@
             <objects>
                 <viewController id="hOv-Ao-71y" customClass="FilterVC" customModule="BoringApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4fa-pP-nyL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQ0-rb-oE5">
@@ -219,21 +219,429 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pXI-V3-oNO">
+                                <rect key="frame" x="40" y="90" width="240" height="26.5"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEy-yS-iYb" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="26.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="All">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="5" leading="12" bottom="5" trailing="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskedCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCurve" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedAllTypesButton:" destination="hOv-Ao-71y" eventType="touchUpInside" id="HEd-Sl-T1f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPw-FM-wEM" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
+                                        <rect key="frame" x="58" y="0.0" width="110.5" height="26.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Education">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="5" leading="12" bottom="5" trailing="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskedCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCurve" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedFilterTypeButton:" destination="hOv-Ao-71y" eventType="touchUpInside" id="1o8-oM-xrT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCn-Ye-c7b" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
+                                        <rect key="frame" x="176.5" y="0.0" width="63.5" height="26.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="DIY">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="5" leading="12" bottom="5" trailing="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskedCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCurve" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedFilterTypeButton:" destination="hOv-Ao-71y" eventType="touchUpInside" id="eSs-GI-KHo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bmh-E6-0Oy">
+                                <rect key="frame" x="40" y="163" width="240" height="26.5"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWZ-a4-jBA" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="71" height="26.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Music">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="5" leading="12" bottom="5" trailing="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskedCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCurve" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedFilterTypeButton:" destination="hOv-Ao-71y" eventType="touchUpInside" id="uvh-6t-Bq9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gev-4r-XbT" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
+                                        <rect key="frame" x="79" y="0.0" width="71.5" height="26.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Social">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="5" leading="12" bottom="5" trailing="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskedCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCurve" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedFilterTypeButton:" destination="hOv-Ao-71y" eventType="touchUpInside" id="Nw4-d1-ihU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opn-zV-9hr" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
+                                        <rect key="frame" x="158.5" y="0.0" width="81.5" height="26.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Charity">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="5" leading="12" bottom="5" trailing="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskedCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCurve" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedFilterTypeButton:" destination="hOv-Ao-71y" eventType="touchUpInside" id="PBm-8l-JfD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BNd-79-JIJ">
+                                <rect key="frame" x="40" y="199.5" width="240" height="26.5"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjm-4l-LYR" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="117.5" height="26.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Relaxation">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="5" leading="12" bottom="5" trailing="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskedCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCurve" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedFilterTypeButton:" destination="hOv-Ao-71y" eventType="touchUpInside" id="KcX-y4-4IU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghH-eQ-O3m" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
+                                        <rect key="frame" x="125.5" y="0.0" width="114.5" height="26.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Busywork">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="5" leading="12" bottom="5" trailing="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskedCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCurve" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedFilterTypeButton:" destination="hOv-Ao-71y" eventType="touchUpInside" id="Cdd-vg-fr8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ytg-n0-Tee">
+                                <rect key="frame" x="40" y="126.5" width="240" height="26.5"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiJ-rS-JOz" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="26.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Recreational">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="5" leading="12" bottom="5" trailing="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskedCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCurve" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedFilterTypeButton:" destination="hOv-Ao-71y" eventType="touchUpInside" id="TWE-W7-8Vs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJD-mg-MuL" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
+                                        <rect key="frame" x="139.5" y="0.0" width="100.5" height="26.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" cornerRadius="0.0">
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Cooking">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <directionalEdgeInsets key="contentInsets" top="5" leading="12" bottom="5" trailing="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="14"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskedCorners" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCurve" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedFilterTypeButton:" destination="hOv-Ao-71y" eventType="touchUpInside" id="us1-Ux-klP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Participants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0x-KN-zbh">
+                                <rect key="frame" x="40" y="261" width="114" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type the number of participants in your activity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3zq-Oa-mpb">
+                                <rect key="frame" x="40" y="305" width="240" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="cc-number"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbE-uD-Kc7">
+                                <rect key="frame" x="40" y="374" width="48.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rSd-Qp-ncZ">
+                                <rect key="frame" x="16" y="418" width="288" height="32"/>
+                                <segments>
+                                    <segment title="full"/>
+                                    <segment title="free"/>
+                                    <segment title="cheap"/>
+                                    <segment title="average"/>
+                                    <segment title="pricey"/>
+                                </segments>
+                                <connections>
+                                    <action selector="priceChanged:" destination="hOv-Ao-71y" eventType="valueChanged" id="6oy-V2-RaT"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zBr-QC-zJm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="q0x-KN-zbh" firstAttribute="leading" secondItem="zBr-QC-zJm" secondAttribute="leading" constant="40" id="0V2-01-Fzu"/>
+                            <constraint firstItem="zBr-QC-zJm" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="qbE-uD-Kc7" secondAttribute="trailing" constant="278" id="3Iv-E0-kyS"/>
+                            <constraint firstItem="zBr-QC-zJm" firstAttribute="trailing" secondItem="rSd-Qp-ncZ" secondAttribute="trailing" constant="16" id="6YP-RX-jyy"/>
+                            <constraint firstItem="qbE-uD-Kc7" firstAttribute="top" secondItem="3zq-Oa-mpb" secondAttribute="bottom" constant="35" id="7Vi-R2-aiQ"/>
+                            <constraint firstItem="zBr-QC-zJm" firstAttribute="trailing" secondItem="BNd-79-JIJ" secondAttribute="trailing" constant="40" id="952-xk-npA"/>
+                            <constraint firstItem="3zq-Oa-mpb" firstAttribute="top" secondItem="q0x-KN-zbh" secondAttribute="bottom" constant="20" id="Abc-3X-OKR"/>
+                            <constraint firstItem="ytg-n0-Tee" firstAttribute="top" secondItem="pXI-V3-oNO" secondAttribute="bottom" constant="10" id="IRb-0F-Dqi"/>
+                            <constraint firstItem="ytg-n0-Tee" firstAttribute="leading" secondItem="zBr-QC-zJm" secondAttribute="leading" constant="40" id="MPU-ao-rCy"/>
+                            <constraint firstItem="pXI-V3-oNO" firstAttribute="top" secondItem="WQ0-rb-oE5" secondAttribute="bottom" constant="20" id="OmV-Mw-KtH"/>
+                            <constraint firstItem="qbE-uD-Kc7" firstAttribute="leading" secondItem="zBr-QC-zJm" secondAttribute="leading" constant="40" id="Pqv-ke-tSD"/>
+                            <constraint firstItem="zBr-QC-zJm" firstAttribute="trailing" secondItem="3zq-Oa-mpb" secondAttribute="trailing" constant="40" id="S1H-LW-53d"/>
+                            <constraint firstItem="zBr-QC-zJm" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="q0x-KN-zbh" secondAttribute="trailing" constant="260" id="Sz2-yL-f80"/>
+                            <constraint firstAttribute="trailing" secondItem="Bmh-E6-0Oy" secondAttribute="trailing" constant="40" id="UPu-uw-FGc"/>
+                            <constraint firstItem="BNd-79-JIJ" firstAttribute="leading" secondItem="zBr-QC-zJm" secondAttribute="leading" constant="40" id="Vqp-NZ-gUP"/>
+                            <constraint firstItem="rSd-Qp-ncZ" firstAttribute="top" secondItem="qbE-uD-Kc7" secondAttribute="bottom" constant="20" id="VyW-BV-Isc"/>
+                            <constraint firstItem="zBr-QC-zJm" firstAttribute="trailing" secondItem="pXI-V3-oNO" secondAttribute="trailing" constant="40" id="aw1-3f-jhR"/>
+                            <constraint firstAttribute="trailing" secondItem="ytg-n0-Tee" secondAttribute="trailing" constant="40" id="bHx-io-Ibt"/>
                             <constraint firstItem="WQ0-rb-oE5" firstAttribute="leading" secondItem="zBr-QC-zJm" secondAttribute="leading" constant="40" id="cGw-HK-Jn3"/>
+                            <constraint firstItem="Bmh-E6-0Oy" firstAttribute="top" secondItem="ytg-n0-Tee" secondAttribute="bottom" constant="10" id="dUI-kv-bqd"/>
+                            <constraint firstItem="rSd-Qp-ncZ" firstAttribute="leading" secondItem="zBr-QC-zJm" secondAttribute="leading" constant="16" id="gLr-FJ-W2y"/>
                             <constraint firstItem="WQ0-rb-oE5" firstAttribute="top" secondItem="zBr-QC-zJm" secondAttribute="top" constant="46" id="jnt-iD-QzW"/>
+                            <constraint firstItem="Bmh-E6-0Oy" firstAttribute="leading" secondItem="zBr-QC-zJm" secondAttribute="leading" constant="40" id="mUY-4q-gsQ"/>
+                            <constraint firstItem="q0x-KN-zbh" firstAttribute="top" secondItem="BNd-79-JIJ" secondAttribute="bottom" constant="35" id="pGc-ay-0hL"/>
+                            <constraint firstItem="3zq-Oa-mpb" firstAttribute="leading" secondItem="zBr-QC-zJm" secondAttribute="leading" constant="40" id="s6z-fM-xJU"/>
+                            <constraint firstItem="pXI-V3-oNO" firstAttribute="leading" secondItem="zBr-QC-zJm" secondAttribute="leading" constant="40" id="sDT-zc-ZOr"/>
+                            <constraint firstItem="BNd-79-JIJ" firstAttribute="top" secondItem="Bmh-E6-0Oy" secondAttribute="bottom" constant="10" id="v77-sD-NV3"/>
                             <constraint firstItem="zBr-QC-zJm" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="WQ0-rb-oE5" secondAttribute="trailing" constant="327" id="wbt-ay-jlR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="allTypeButton" destination="LEy-yS-iYb" id="VgT-3c-EKG"/>
+                        <outlet property="participantsNumberTextField" destination="3zq-Oa-mpb" id="aDh-b9-Dc9"/>
+                        <outlet property="priceSelector" destination="rSd-Qp-ncZ" id="h2b-mM-nAW"/>
+                        <outletCollection property="typeButtonsCollection" destination="gPw-FM-wEM" collectionClass="NSMutableArray" id="etn-m2-ovG"/>
+                        <outletCollection property="typeButtonsCollection" destination="CCn-Ye-c7b" collectionClass="NSMutableArray" id="sEg-q1-gCd"/>
+                        <outletCollection property="typeButtonsCollection" destination="fiJ-rS-JOz" collectionClass="NSMutableArray" id="FLF-r3-CWK"/>
+                        <outletCollection property="typeButtonsCollection" destination="IJD-mg-MuL" collectionClass="NSMutableArray" id="XLy-9i-XIc"/>
+                        <outletCollection property="typeButtonsCollection" destination="pWZ-a4-jBA" collectionClass="NSMutableArray" id="gr8-MT-84v"/>
+                        <outletCollection property="typeButtonsCollection" destination="Gev-4r-XbT" collectionClass="NSMutableArray" id="cSb-Dj-Sbg"/>
+                        <outletCollection property="typeButtonsCollection" destination="opn-zV-9hr" collectionClass="NSMutableArray" id="1Dv-Ot-GKw"/>
+                        <outletCollection property="typeButtonsCollection" destination="Wjm-4l-LYR" collectionClass="NSMutableArray" id="rBE-oy-Oie"/>
+                        <outletCollection property="typeButtonsCollection" destination="ghH-eQ-O3m" collectionClass="NSMutableArray" id="GK1-b7-jZF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyC-SA-i36" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="813" y="94"/>
+            <point key="canvasLocation" x="811.59420289855075" y="93.75"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="CCn-Ye-c7b">
+            <size key="intrinsicContentSize" width="47" height="26.5"/>
+        </designable>
+        <designable name="Gev-4r-XbT">
+            <size key="intrinsicContentSize" width="62.5" height="26.5"/>
+        </designable>
+        <designable name="IJD-mg-MuL">
+            <size key="intrinsicContentSize" width="76.5" height="26.5"/>
+        </designable>
+        <designable name="LEy-yS-iYb">
+            <size key="intrinsicContentSize" width="39.5" height="26.5"/>
+        </designable>
+        <designable name="Wjm-4l-LYR">
+            <size key="intrinsicContentSize" width="90" height="26.5"/>
+        </designable>
+        <designable name="fiJ-rS-JOz">
+            <size key="intrinsicContentSize" width="102.5" height="26.5"/>
+        </designable>
+        <designable name="gPw-FM-wEM">
+            <size key="intrinsicContentSize" width="87.5" height="26.5"/>
+        </designable>
+        <designable name="ghH-eQ-O3m">
+            <size key="intrinsicContentSize" width="86" height="26.5"/>
+        </designable>
+        <designable name="opn-zV-9hr">
+            <size key="intrinsicContentSize" width="69" height="26.5"/>
+        </designable>
+        <designable name="pWZ-a4-jBA">
+            <size key="intrinsicContentSize" width="62" height="26.5"/>
+        </designable>
+    </designables>
     <resources>
         <image name="arrow.counterclockwise" catalog="system" width="115" height="128"/>
         <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
@@ -242,11 +650,38 @@
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

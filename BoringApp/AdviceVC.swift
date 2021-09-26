@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftUI
 
 class AdviceVC: UIViewController {
 
@@ -17,14 +16,12 @@ class AdviceVC: UIViewController {
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var tagView: BATagView!
     
+    private var requestFilter: Filter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        getActivity()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
         clearUIOnStart()
+        getActivity()
     }
     
     @IBAction func refreshActivity(_ sender: UIButton) {
@@ -38,14 +35,14 @@ class AdviceVC: UIViewController {
             self.numberOfParticipantsLabel.text = String(activity.participants)
             
             switch activity.price {
-            case 0:
+            case 0..<0.1:
                 self.costLabel.text = "free"
-            case 0.01...0.29:
+            case 0.1..<0.3:
                 self.costLabel.text = "cheap"
-            case 0.30...0.69:
+            case 0.3..<0.7:
                 self.costLabel.text = "average"
-            case 0.70...:
-                self.costLabel.text = "pricy"
+            case 0.7...:
+                self.costLabel.text = "pricey"
             default:
                 self.costLabel.text = "???"
             }
@@ -60,7 +57,7 @@ class AdviceVC: UIViewController {
     }
     
     private func getActivity() {
-        NetworkManager.shared.getActivity { [weak self] result in
+        NetworkManager.shared.getActivity(with: requestFilter) { [weak self] result in
             guard let self = self else { return }
             
             switch result {
@@ -71,5 +68,27 @@ class AdviceVC: UIViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showFilter" {
+            let filterVC = segue.destination as! FilterVC
+            filterVC.delegate = self
+            if let filter = requestFilter {
+                filterVC.requestFilter = filter
+            }
+        }
+    }
+}
+
+extension AdviceVC: FilterVCDelegate {
+    func modalViewDidDismiss() {
+        clearUIOnStart() // Strange flashing UI bug without cleaning, maybe just simulator problem
+        getActivity()
+    }
+    
+    func filterUpdated(_ filter: Filter) {
+        requestFilter = filter
+    }
+    
 }
 

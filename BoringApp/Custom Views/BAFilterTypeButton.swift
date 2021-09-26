@@ -1,14 +1,13 @@
 //
-//  BATagView.swift
+//  BAFilterTypeButton.swift
 //  BoringApp
 //
-//  Created by Maxim Prosvirkin on 22.09.2021.
+//  Created by Maxim Prosvirkin on 24.09.2021.
 //
 
 import UIKit
-import SwiftUI
 
-@IBDesignable class BATagView: UIView {
+@IBDesignable class BAFilterTypeButton: UIButton {
     
     @IBInspectable public var cornerRadius: CGFloat {
         get { return layer.cornerRadius }
@@ -21,5 +20,15 @@ import SwiftUI
     
     @IBInspectable public var maskedCorners: Bool = true {
         didSet { layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMinYCorner] }
+    }
+    
+    public var buttonSelected: Bool = false {
+        didSet {
+            if buttonSelected {
+                self.alpha = 1.0
+            } else {
+                self.alpha = 0.3
+            }
+        }
     }
 }
