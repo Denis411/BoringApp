@@ -23,9 +23,11 @@
 		94FB68DE26FA415700CBCD91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FB68DC26FA415700CBCD91 /* Main.storyboard */; };
 		94FB68E026FA415900CBCD91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94FB68DF26FA415900CBCD91 /* Assets.xcassets */; };
 		94FB68E326FA415900CBCD91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94FB68E126FA415900CBCD91 /* LaunchScreen.storyboard */; };
+		9F28ADCF30B34586490C1A79 /* Pods_BoringApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F41D716BEB834CAF92BA8BF /* Pods_BoringApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41AB020521B08149587C699A /* Pods-BoringApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoringApp.release.xcconfig"; path = "Target Support Files/Pods-BoringApp/Pods-BoringApp.release.xcconfig"; sourceTree = "<group>"; };
 		9429149326FC902600680BC7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		9429149526FC90E500680BC7 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		9429149A26FC91FC00680BC7 /* BAError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAError.swift; sourceTree = "<group>"; };
@@ -44,6 +46,8 @@
 		94FB68DF26FA415900CBCD91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94FB68E226FA415900CBCD91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94FB68E426FA415900CBCD91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F41D716BEB834CAF92BA8BF /* Pods_BoringApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoringApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3BAA51B53DCCADDA49ACC7 /* Pods-BoringApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoringApp.debug.xcconfig"; path = "Target Support Files/Pods-BoringApp/Pods-BoringApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,12 +55,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F28ADCF30B34586490C1A79 /* Pods_BoringApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		032752E6CCB87FDA398EFC02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F41D716BEB834CAF92BA8BF /* Pods_BoringApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9429149726FC90E900680BC7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +130,8 @@
 			children = (
 				94FB68D526FA415700CBCD91 /* BoringApp */,
 				94FB68D426FA415700CBCD91 /* Products */,
+				FB6531803D06D25F1415B99D /* Pods */,
+				032752E6CCB87FDA398EFC02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +160,16 @@
 			path = BoringApp;
 			sourceTree = "<group>";
 		};
+		FB6531803D06D25F1415B99D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD3BAA51B53DCCADDA49ACC7 /* Pods-BoringApp.debug.xcconfig */,
+				41AB020521B08149587C699A /* Pods-BoringApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94FB68E726FA415900CBCD91 /* Build configuration list for PBXNativeTarget "BoringApp" */;
 			buildPhases = (
+				D90DBA886B4BF3C10F0B368D /* [CP] Check Pods Manifest.lock */,
 				94FB68CF26FA415700CBCD91 /* Sources */,
 				94FB68D026FA415700CBCD91 /* Frameworks */,
 				94FB68D126FA415700CBCD91 /* Resources */,
+				B56B01AC2676CDEF8725BE4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,6 +236,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B56B01AC2676CDEF8725BE4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoringApp/Pods-BoringApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoringApp/Pods-BoringApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoringApp/Pods-BoringApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D90DBA886B4BF3C10F0B368D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoringApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		94FB68CF26FA415700CBCD91 /* Sources */ = {
@@ -371,6 +440,7 @@
 		};
 		94FB68E826FA415900CBCD91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD3BAA51B53DCCADDA49ACC7 /* Pods-BoringApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -391,6 +461,7 @@
 		};
 		94FB68E926FA415900CBCD91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41AB020521B08149587C699A /* Pods-BoringApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
