@@ -64,7 +64,6 @@ class AdviceVC: UIViewController {
             case .success(let activity):
                 self.updateUIElements(with: activity)
             case .failure(let error):
-                print(error.rawValue)
                 self.presentBAAlertOnMainThread(title: "No Activity", message: error.rawValue)
             }
         }
@@ -83,7 +82,7 @@ class AdviceVC: UIViewController {
 
 extension AdviceVC: FilterVCDelegate {
     func modalViewDidDismiss() {
-        clearUIOnStart() // Strange flashing UI bug without cleaning, maybe just simulator problem
+//        clearUIOnStart()
         getActivity()
     }
     

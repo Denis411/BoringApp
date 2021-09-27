@@ -53,7 +53,6 @@ class NetworkManager {
     
     private func prepareQueryURLFor(filter: Filter?) {
         if let filter = filter {
-            print(filter)
             var queryParameters: String = "?"
             
             if let types = filter.selectedTypes {
@@ -82,7 +81,6 @@ class NetworkManager {
             }
             
             requestURL = baseURL + queryParameters
-            print(requestURL!)
         }
     }
 }
