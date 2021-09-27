@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		949C135B26FE35E8005BBF3F /* BAFilterTypeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949C135A26FE35E8005BBF3F /* BAFilterTypeButton.swift */; };
 		94CF95B326FE9C4D00092283 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF95B226FE9C4D00092283 /* Filter.swift */; };
 		94CF95B526FE9FAB00092283 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CF95B426FE9FAB00092283 /* Price.swift */; };
+		94DDDD8027013B2300F25892 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DDDD7F27013B2300F25892 /* UIViewController+Ext.swift */; };
 		94FB68D726FA415700CBCD91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB68D626FA415700CBCD91 /* AppDelegate.swift */; };
 		94FB68D926FA415700CBCD91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB68D826FA415700CBCD91 /* SceneDelegate.swift */; };
 		94FB68DB26FA415700CBCD91 /* AdviceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FB68DA26FA415700CBCD91 /* AdviceVC.swift */; };
@@ -38,6 +39,7 @@
 		949C135A26FE35E8005BBF3F /* BAFilterTypeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BAFilterTypeButton.swift; sourceTree = "<group>"; };
 		94CF95B226FE9C4D00092283 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		94CF95B426FE9FAB00092283 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		94DDDD7F27013B2300F25892 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		94FB68D326FA415700CBCD91 /* BoringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94FB68D626FA415700CBCD91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94FB68D826FA415700CBCD91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				9429149D26FC9CD800680BC7 /* String+Ext.swift */,
+				94DDDD7F27013B2300F25892 /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -123,6 +126,23 @@
 				949C135A26FE35E8005BBF3F /* BAFilterTypeButton.swift */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		94DDDD8B2701478E00F25892 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				94FB68DA26FA415700CBCD91 /* AdviceVC.swift */,
+				949B9E8A26FBD37600DC892E /* FilterVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		94DDDD8C2701479A00F25892 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94FB68DC26FA415700CBCD91 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		94FB68CA26FA415700CBCD91 = {
@@ -148,9 +168,8 @@
 			children = (
 				9429149726FC90E900680BC7 /* Model */,
 				9429149826FC916000680BC7 /* Managers */,
-				94FB68DA26FA415700CBCD91 /* AdviceVC.swift */,
-				949B9E8A26FBD37600DC892E /* FilterVC.swift */,
-				94FB68DC26FA415700CBCD91 /* Main.storyboard */,
+				94DDDD8C2701479A00F25892 /* Views */,
+				94DDDD8B2701478E00F25892 /* Controllers */,
 				94DDDD7E2701253D00F25892 /* Custom Views */,
 				9429149C26FC91FF00680BC7 /* Utilities */,
 				9429149F26FC9CDE00680BC7 /* Extensions */,
@@ -166,7 +185,6 @@
 				DD3BAA51B53DCCADDA49ACC7 /* Pods-BoringApp.debug.xcconfig */,
 				41AB020521B08149587C699A /* Pods-BoringApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -286,6 +304,7 @@
 			files = (
 				94FB68DB26FA415700CBCD91 /* AdviceVC.swift in Sources */,
 				94CF95B326FE9C4D00092283 /* Filter.swift in Sources */,
+				94DDDD8027013B2300F25892 /* UIViewController+Ext.swift in Sources */,
 				94FB68D726FA415700CBCD91 /* AppDelegate.swift in Sources */,
 				94FB68D926FA415700CBCD91 /* SceneDelegate.swift in Sources */,
 				9429149426FC902600680BC7 /* NetworkManager.swift in Sources */,

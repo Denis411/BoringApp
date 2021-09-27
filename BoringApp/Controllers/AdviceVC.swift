@@ -65,6 +65,7 @@ class AdviceVC: UIViewController {
                 self.updateUIElements(with: activity)
             case .failure(let error):
                 print(error.rawValue)
+                self.presentBAAlertOnMainThread(title: "No Activity", message: error.rawValue)
             }
         }
     }
