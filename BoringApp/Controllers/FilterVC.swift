@@ -64,6 +64,7 @@ class FilterVC: UIViewController {
             allTypeButton.buttonSelected = true
         }
     }
+    
     @IBAction func priceChanged(_ sender: UISegmentedControl) {
         switch priceSelector.selectedSegmentIndex {
         case 0:
