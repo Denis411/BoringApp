@@ -17,6 +17,7 @@ class AdviceVC: UIViewController {
     @IBOutlet weak var tagView: BATagView!
     
     private var requestFilter: Filter?
+    private var activityPrice: Double?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +29,32 @@ class AdviceVC: UIViewController {
         getActivity()
     }
     
+    @IBAction func favoriteActivity(_ sender: UIButton) {
+        if let activity = adviceCardTextField.text,
+           let participants = Int(numberOfParticipantsLabel.text!),
+           let type = typeLabel.text?.lowercased(),
+           let price = activityPrice {
+            let favorite = Activity(activity: activity, type: type, participants: participants, price: price, link: nil)
+            
+            PersistenceManager.updateWith(favorite: favorite, actionType: .add) { [weak self] error in
+                guard let self = self else { return }
+                guard let error = error else {
+                    self.presentBAAlertOnMainThread(title: "Success!", message: "You have successfully favorited this activity", errorType: .success)
+                    return
+                }
+                
+                self.presentBAAlertOnMainThread(title: "Sometging went wrong.", message: error.rawValue, errorType: .error)
+            }
+        }
+    }
+    
     private func updateUIElements(with activity: Activity) {
         DispatchQueue.main.async {
             self.typeLabel.text = activity.type.capitalizingFirstLetter()
             self.adviceCardTextField.text = activity.activity
             self.numberOfParticipantsLabel.text = String(activity.participants)
             
+            self.activityPrice = activity.price
             switch activity.price {
             case 0..<0.1:
                 self.costLabel.text = "free"
@@ -64,7 +85,7 @@ class AdviceVC: UIViewController {
             case .success(let activity):
                 self.updateUIElements(with: activity)
             case .failure(let error):
-                self.presentBAAlertOnMainThread(title: "No Activity", message: error.rawValue)
+                self.presentBAAlertOnMainThread(title: "No Activity", message: error.rawValue, errorType: .warning)
             }
         }
     }
@@ -77,13 +98,17 @@ class AdviceVC: UIViewController {
                 filterVC.requestFilter = filter
             }
         }
+        
+        if segue.identifier == "showFavorites" {
+            let favoritesVC = segue.destination as! FavoritesVC
+            favoritesVC.modalPresentationStyle = .fullScreen
+        }
     }
 }
 
 extension AdviceVC: FilterVCDelegate {
     func modalViewDidDismiss() {
-//        clearUIOnStart()
-        getActivity()
+//        getActivity()
     }
     
     func filterUpdated(_ filter: Filter) {

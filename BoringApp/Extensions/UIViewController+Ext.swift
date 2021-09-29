@@ -10,10 +10,10 @@ import CDAlertView
 
 extension UIViewController {
     
-    func presentBAAlertOnMainThread(title: String, message: String) {
+    func presentBAAlertOnMainThread(title: String, message: String, errorType: CDAlertViewType) {
         DispatchQueue.main.async {
-            let alert = CDAlertView(title: title, message: message, type: .error)
-            let doneAction = CDAlertViewAction(title: "OK 😔")
+            let alert = CDAlertView(title: title, message: message, type: errorType)
+            let doneAction = CDAlertViewAction(title: "OK")
             alert.add(action: doneAction)
             alert.show()
         }

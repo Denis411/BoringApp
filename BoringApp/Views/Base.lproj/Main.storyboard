@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="AdviceVC" customModule="BoringApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlz-6c-Ay6">
-                                <rect key="frame" x="250" y="16" width="50" height="50"/>
+                                <rect key="frame" x="344" y="60" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="E6M-02-5jN"/>
                                     <constraint firstAttribute="height" constant="50" id="I0U-Ht-npk"/>
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEF-xi-lhE" customClass="BAAdviceCardView" customModule="BoringApp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="84" width="280" height="400"/>
+                                <rect key="frame" x="20" y="181" width="374" height="534"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjg-3S-1WK" customClass="BATagView" customModule="BoringApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="148.5" height="46"/>
@@ -61,17 +61,17 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Watch a Khan Academy lecture on a subject of your choosing" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bH-9J-Iy3">
-                                        <rect key="frame" x="8" y="62" width="264" height="262"/>
+                                        <rect key="frame" x="8" y="62" width="358" height="396"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xdb-IV-gfd">
-                                        <rect key="frame" x="8" y="332" width="264" height="60"/>
+                                        <rect key="frame" x="8" y="466" width="358" height="60"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qh6-WR-7Yu">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="175" height="60"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eFA-a7-l0F">
                                                         <rect key="frame" x="4" y="7.5" width="48" height="45"/>
@@ -98,16 +98,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kbt-WS-Ob5">
-                                                <rect key="frame" x="136" y="0.0" width="128" height="60"/>
+                                                <rect key="frame" x="183" y="0.0" width="175" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="free" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSt-dZ-HpE">
-                                                        <rect key="frame" x="63.5" y="9.5" width="56.5" height="41"/>
+                                                        <rect key="frame" x="110.5" y="9.5" width="56.5" height="41"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollarsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-hW-DsA">
-                                                        <rect key="frame" x="11.5" y="6.5" width="48" height="47"/>
+                                                        <rect key="frame" x="58.5" y="6.5" width="48" height="47"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="48" id="bPd-5m-6rE"/>
@@ -163,7 +163,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXY-Oa-ZI1">
-                                <rect key="frame" x="135" y="508" width="50" height="50"/>
+                                <rect key="frame" x="182" y="802" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="a1L-ne-Siv"/>
                                     <constraint firstAttribute="width" constant="50" id="lKa-tz-Ym4"/>
@@ -176,17 +176,53 @@
                                     <action selector="refreshActivity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="joa-Dc-HP6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOu-sI-eat">
+                                <rect key="frame" x="324" y="811" width="40" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Hku-7V-WT3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="Imf-nA-tmq"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="heart" catalog="system"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="favoriteActivity:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7V6-Ks-PHn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rq-ng-mcP">
+                                <rect key="frame" x="20" y="60" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="FzI-rQ-4lc"/>
+                                    <constraint firstAttribute="height" constant="50" id="pd6-kP-JWB"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" imageContentMode="scaleAspectFit">
+                                        <imageReference key="image" image="archivebox" catalog="system" symbolScale="default"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="71h-KD-7ep" kind="show" identifier="showFavorites" id="kjC-Hw-hRC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="9rq-ng-mcP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Xs-mf-Pva"/>
+                            <constraint firstItem="qOu-sI-eat" firstAttribute="centerY" secondItem="uXY-Oa-ZI1" secondAttribute="centerY" id="1ZO-Ay-1k5"/>
+                            <constraint firstItem="9rq-ng-mcP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="5Zm-Y8-15l"/>
                             <constraint firstItem="Jlz-6c-Ay6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="5uq-Sq-bYO"/>
                             <constraint firstItem="uXY-Oa-ZI1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L3B-KX-vdQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QEF-xi-lhE" secondAttribute="trailing" constant="20" id="MQb-o1-gv7"/>
                             <constraint firstItem="QEF-xi-lhE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WCN-Tq-rIB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qOu-sI-eat" secondAttribute="trailing" constant="50" id="coY-j7-rLh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jlz-6c-Ay6" secondAttribute="trailing" constant="20" id="jaG-Ue-0uG"/>
                             <constraint firstItem="QEF-xi-lhE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mWO-4E-531"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uXY-Oa-ZI1" secondAttribute="bottom" constant="10" id="rHa-Lt-gQD"/>
+                            <constraint firstItem="qOu-sI-eat" firstAttribute="leading" relation="lessThanOrEqual" secondItem="uXY-Oa-ZI1" secondAttribute="trailing" constant="92" id="txG-VB-5sm"/>
                             <constraint firstItem="QEF-xi-lhE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zE5-xw-Xpv"/>
                         </constraints>
                     </view>
@@ -201,14 +237,67 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+            <point key="canvasLocation" x="18.75" y="92.957746478873247"/>
+        </scene>
+        <!--FavoritesVC-->
+        <scene sceneID="2LN-i3-sGt">
+            <objects>
+                <viewController id="71h-KD-7ep" customClass="FavoritesVC" customModule="BoringApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xib-IP-IqY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHt-UX-AvN">
+                                <rect key="frame" x="264" y="682" width="70" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="3sM-Jk-1oA"/>
+                                    <constraint firstAttribute="height" constant="66" id="QRN-yg-alk"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="trash.circle.fill" catalog="system" imageContentMode="scaleAspectFit"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteButtonPressed:" destination="71h-KD-7ep" eventType="touchUpInside" id="1oK-Sn-soz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZM-zX-GGh">
+                                <rect key="frame" x="80" y="682" width="70" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="2G3-Cb-3EY"/>
+                                    <constraint firstAttribute="height" constant="66" id="B45-iT-eVI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="arrow.backward.circle.fill" catalog="system"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backwardButtonPressed:" destination="71h-KD-7ep" eventType="touchUpInside" id="7ci-TO-QVo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DhU-Bf-Nza"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DhU-Bf-Nza" firstAttribute="bottom" secondItem="jHt-UX-AvN" secondAttribute="bottom" constant="60" id="BoZ-6r-iEu"/>
+                            <constraint firstItem="SZM-zX-GGh" firstAttribute="leading" secondItem="DhU-Bf-Nza" secondAttribute="leading" constant="80" id="o63-Xe-OMj"/>
+                            <constraint firstItem="DhU-Bf-Nza" firstAttribute="trailing" secondItem="jHt-UX-AvN" secondAttribute="trailing" constant="80" id="sw4-9T-TkU"/>
+                            <constraint firstItem="DhU-Bf-Nza" firstAttribute="bottom" secondItem="SZM-zX-GGh" secondAttribute="bottom" constant="60" id="tR7-dB-JFk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jwg-FG-ZId"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYz-09-kwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.73913043478262" y="-224.33035714285714"/>
         </scene>
         <!--FilterVC-->
         <scene sceneID="mDb-1J-cYe">
             <objects>
                 <viewController id="hOv-Ao-71y" customClass="FilterVC" customModule="BoringApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4fa-pP-nyL">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQ0-rb-oE5">
@@ -220,10 +309,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pXI-V3-oNO">
-                                <rect key="frame" x="40" y="90" width="240" height="26.5"/>
+                                <rect key="frame" x="40" y="90" width="334" height="26.5"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEy-yS-iYb" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="26.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -252,7 +341,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPw-FM-wEM" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
-                                        <rect key="frame" x="58" y="0.0" width="110.5" height="26.5"/>
+                                        <rect key="frame" x="77.5" y="0.0" width="154" height="26.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -281,7 +370,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCn-Ye-c7b" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
-                                        <rect key="frame" x="176.5" y="0.0" width="63.5" height="26.5"/>
+                                        <rect key="frame" x="239.5" y="0.0" width="94.5" height="26.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -312,10 +401,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bmh-E6-0Oy">
-                                <rect key="frame" x="40" y="163" width="240" height="26.5"/>
+                                <rect key="frame" x="40" y="163" width="334" height="26.5"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWZ-a4-jBA" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="71" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="99" height="26.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -344,7 +433,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gev-4r-XbT" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
-                                        <rect key="frame" x="79" y="0.0" width="71.5" height="26.5"/>
+                                        <rect key="frame" x="107" y="0.0" width="99.5" height="26.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -373,7 +462,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opn-zV-9hr" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
-                                        <rect key="frame" x="158.5" y="0.0" width="81.5" height="26.5"/>
+                                        <rect key="frame" x="214.5" y="0.0" width="119.5" height="26.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -404,10 +493,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BNd-79-JIJ">
-                                <rect key="frame" x="40" y="199.5" width="240" height="26.5"/>
+                                <rect key="frame" x="40" y="199.5" width="334" height="26.5"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjm-4l-LYR" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="117.5" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="163.5" height="26.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -436,7 +525,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghH-eQ-O3m" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
-                                        <rect key="frame" x="125.5" y="0.0" width="114.5" height="26.5"/>
+                                        <rect key="frame" x="171.5" y="0.0" width="162.5" height="26.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -467,10 +556,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ytg-n0-Tee">
-                                <rect key="frame" x="40" y="126.5" width="240" height="26.5"/>
+                                <rect key="frame" x="40" y="126.5" width="334" height="26.5"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiJ-rS-JOz" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="26.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -499,7 +588,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJD-mg-MuL" customClass="BAFilterTypeButton" customModule="BoringApp" customModuleProvider="target">
-                                        <rect key="frame" x="139.5" y="0.0" width="100.5" height="26.5"/>
+                                        <rect key="frame" x="191" y="0.0" width="143" height="26.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -535,17 +624,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type the number of participants in your activity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3zq-Oa-mpb">
-                                <rect key="frame" x="40" y="305" width="240" height="34"/>
+                                <rect key="frame" x="40" y="305" width="334" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="cc-number"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbE-uD-Kc7">
-                                <rect key="frame" x="40" y="374" width="48.5" height="24"/>
+                                <rect key="frame" x="40" y="374" width="96" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rSd-Qp-ncZ">
-                                <rect key="frame" x="16" y="418" width="288" height="32"/>
+                                <rect key="frame" x="16" y="418" width="382" height="32"/>
                                 <segments>
                                     <segment title="full"/>
                                     <segment title="free"/>
@@ -607,7 +696,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyC-SA-i36" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="811.59420289855075" y="93.75"/>
+            <point key="canvasLocation" x="822" y="453"/>
         </scene>
     </scenes>
     <designables>
@@ -643,10 +732,14 @@
         </designable>
     </designables>
     <resources>
+        <image name="archivebox" catalog="system" width="128" height="106"/>
+        <image name="arrow.backward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrow.counterclockwise" catalog="system" width="115" height="128"/>
         <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
+        <image name="trash.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -32,6 +32,7 @@ class FilterVC: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         prepareFilter()
         delegate?.filterUpdated(requestFilter)
         delegate?.modalViewDidDismiss()
@@ -76,7 +77,7 @@ class FilterVC: UIViewController {
         case 3:
             requestFilter.price = .average(minimalPrice: 0.3, maximumPrice: 0.6)
         case 4:
-            requestFilter.price = .average(minimalPrice: 0.7, maximumPrice: 1.0)
+            requestFilter.price = .pricey(minimalPrice: 0.7, maximumPrice: 1.0)
         default:
             break
         }
