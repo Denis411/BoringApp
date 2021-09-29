@@ -108,7 +108,7 @@ class AdviceVC: UIViewController {
 
 extension AdviceVC: FilterVCDelegate {
     func modalViewDidDismiss() {
-//        getActivity()
+        getActivity()
     }
     
     func filterUpdated(_ filter: Filter) {
