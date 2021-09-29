@@ -34,7 +34,7 @@ class AdviceVC: UIViewController {
            let participants = Int(numberOfParticipantsLabel.text!),
            let type = typeLabel.text?.lowercased(),
            let price = activityPrice {
-            let favorite = Activity(activity: activity, type: type, participants: participants, price: price, link: nil)
+            let favorite = Activity(activity: activity, type: type, participants: participants, price: price)
             
             PersistenceManager.updateWith(favorite: favorite, actionType: .add) { [weak self] error in
                 guard let self = self else { return }

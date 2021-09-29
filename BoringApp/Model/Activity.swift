@@ -12,5 +12,4 @@ struct Activity: Codable, Hashable {
     let type: String
     let participants: Int
     let price: Double
-    let link: String?
 }
