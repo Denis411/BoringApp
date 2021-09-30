@@ -8,37 +8,37 @@
 import Foundation
 
 class NetworkManager {
-    
+
     static let shared = NetworkManager()
     private let baseURL = "https://www.boredapi.com/api/activity"
     private var requestURL: String?
-    
+
     private init() {}
-    
+
     public func getActivity(with filter: Filter?, completed: @escaping (Result<Activity, BAError>) -> Void) {
         prepareQueryURLFor(filter: filter)
-        
+
         guard let url = URL(string: requestURL ?? baseURL) else {
             completed(.failure(.invalidRequest))
             return
         }
-        
+
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            if let _ = error {
+            if error != nil {
                 completed(.failure(.unableToComplete))
                 return
             }
-            
+
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                 completed(.failure(.invalidResponse))
                 return
             }
-            
+
             guard let data = data else {
                 completed(.failure(.invalidData))
                 return
             }
-            
+
             do {
                 let decoder = JSONDecoder()
                 let activity = try decoder.decode(Activity.self, from: data)
@@ -47,25 +47,25 @@ class NetworkManager {
                 completed(.failure(.noActivity))
             }
         }
-        
+
         task.resume()
     }
-    
+
     private func prepareQueryURLFor(filter: Filter?) {
         if let filter = filter {
             var queryParameters: String = "?"
-            
+
             if let types = filter.selectedTypes {
                 for type in types {
                     queryParameters += "type=" + type + "&"
                 }
                 queryParameters = String(queryParameters.dropLast())
             }
-            
+
             if let participants = filter.participants {
                 queryParameters += "&" + "participants=" + String(participants)
             }
-            
+
             if let price = filter.price {
                 queryParameters += "&"
                 switch price {
@@ -79,7 +79,7 @@ class NetworkManager {
                     queryParameters += "minprice=" + String(minimalPrice) + "&" + "maxprice=" + String(maximumPrice)
                 }
             }
-            
+
             requestURL = baseURL + queryParameters
         }
     }

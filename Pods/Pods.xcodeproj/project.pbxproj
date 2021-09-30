@@ -3,119 +3,140 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		00962B6EBA32826A37C3CE79E2FDCD17 /* warningOutline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD79A732AA348662C63E7E3C7C464B2 /* warningOutline@2x.png */; };
-		0FB0D215D1E124B042266F226E33A8CB /* alarmFilled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A674262A94713D929F3E0C9D571E49 /* alarmFilled@3x.png */; };
-		1461FC43C8FE96419BAE4411378C8632 /* notificationOutline@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBBECFABC09898B8A64468FF0B091CA1 /* notificationOutline@1x.png */; };
-		1CC6C4E41E1F8B87E563DD9589FACBA1 /* alarmOutline@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FB70D04A28D14834C7A6B6A7891CD7 /* alarmOutline@1x.png */; };
-		2305558946CB5471799926E7BDD8563A /* warningFilled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 630F8D4C61F0DF6804E054D894C0CAED /* warningFilled@2x.png */; };
-		25C6D12EDA6C57CB0F2FB61A9E2D7FCA /* Pods-BoringApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B2FDBA6A7F22B07BEB8C533F1AB4E73 /* Pods-BoringApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29A4C8681BC730518211CAE0B72D3487 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		313E08DC574E546E9886B4DEF33CF342 /* CDAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAF209E06E675215E93F8799C9B9A43 /* CDAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B3B0D6F6C86E675184DD7FD81B14879 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B86F9B3B194221A6A00184E78713EE /* check@2x.png */; };
-		434B386B132AEB29DF8F7261FA454441 /* CDAlertViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97FC7D21E2187D0728154281455F8AE /* CDAlertViewType.swift */; };
+		081AE27BF5E6454843BE8D48E8DDC6C8 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F09366DD83FDE9BE7229B62D06A1A30 /* check@2x.png */; };
+		1C1873A08D43196D59F47C1F335F3549 /* check@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D9271410AC4911A688C2C9C945D9D8E /* check@3x.png */; };
+		25B24C3AAB152F4C4A20C6622267D7DC /* error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01A3455BBFDA42B63158CCD30924F63E /* error@3x.png */; };
+		313E08DC574E546E9886B4DEF33CF342 /* CDAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45DFE2631EFF83BF68A2D2ACACEB72E9 /* CDAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3529D226CFE8DF184B438E96DEEDE361 /* notificationOutline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0982E9BF0F420EDF5791A03C9C2839F7 /* notificationOutline@2x.png */; };
+		3AE7623563D8C5A48A748AEB46A44473 /* alarmOutline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 587D029833266DD243A1B2A76C6E9068 /* alarmOutline@3x.png */; };
+		3D723D5302F2E3745479B6AA24F32401 /* notificationFilled@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7618D90B811D3111134DDEE7FFE329E /* notificationFilled@1x.png */; };
+		3E77FC68811F0DA196AAA5C33C5CE367 /* warningFilled@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E7AAF67DE15BEE7FFE61C1C07EFA810 /* warningFilled@1x.png */; };
+		3F11EC174AF83755CE3437361C0486A5 /* Pods-BoringApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F17F5246B714AE686CA5DF4BF8E8D8 /* Pods-BoringApp-dummy.m */; };
+		434B386B132AEB29DF8F7261FA454441 /* CDAlertViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04B0EF0A6450ACFA2D21384E774C408 /* CDAlertViewType.swift */; };
 		4364E38721E0B3E74313C772BE953706 /* CDAlertView-CDAlertView in Resources */ = {isa = PBXBuildFile; fileRef = E417FD65D5A1F9B3171583531D47A61C /* CDAlertView-CDAlertView */; };
-		485091B4A3041FC761256C90EAF700CD /* error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45021BA2673D018F4C771F5FE00175CA /* error@3x.png */; };
-		4FF3FBF15CCF4E48CB0EC0DB495C781D /* CDAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D50D8796DF07DEBFF6874054B4D4914 /* CDAlertView-dummy.m */; };
-		570C153B5BB513FA2D02FFAD7FC354CE /* CDAlertHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E4A8D01E7B50A76788C35E5C4C28B /* CDAlertHeaderView.swift */; };
-		5C061CE4C240F63DF222ECA467362A7A /* CDAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF140230E753B0A7D6A5A51D007378B /* CDAlertView.swift */; };
+		4C0A6C100F3832813B2E17E8C4F2E3CE /* notificationFilled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FA354B538BD682A049D80E885CB2A7A /* notificationFilled@2x.png */; };
+		4FF3FBF15CCF4E48CB0EC0DB495C781D /* CDAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ACCCE0B57F64762E42DAFC96A2D62F /* CDAlertView-dummy.m */; };
+		570C153B5BB513FA2D02FFAD7FC354CE /* CDAlertHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238A7C1AAF777291860C79A328315F19 /* CDAlertHeaderView.swift */; };
+		58C02427FCD59783791F9736AB762C14 /* Pods-BoringApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B2FDBA6A7F22B07BEB8C533F1AB4E73 /* Pods-BoringApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C061CE4C240F63DF222ECA467362A7A /* CDAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062F77D55A1F2822B553CDD3BCFB4C2 /* CDAlertView.swift */; };
 		5D44594A9887C7BEC456B7DDD78B1836 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		628EF6037A617CA974E6AB2247CE35A6 /* notificationFilled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C2894D8F3538E3DCAC9A5CECE9413D /* notificationFilled@3x.png */; };
-		67D4EB06FE02D27ED07E7125D55DE251 /* alarmOutline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE455BA1E584CBA97B1E435FDD0D3CAE /* alarmOutline@2x.png */; };
-		6A1668A806831C811C508480E3F86B83 /* warningOutline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3168F1C774D41D4D6A4616891FB878C /* warningOutline@3x.png */; };
-		6CC56C791FF49EE96BE4CFC15532338E /* LayoutConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F51E8A6405C25C44FF226698AAB73 /* LayoutConstraintsExtension.swift */; };
-		6D69FEEE261EC274881BF688EFE2DCB3 /* check@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67911FF5F91211E7321B2ACD9D1A0690 /* check@1x.png */; };
-		6EA7B25026ED161E4A1EF278F616673E /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644974DBBA3BC2D105D54AFC317E373B /* ImageHelper.swift */; };
-		719104676792CF1C67DDD2F1F03FF5AF /* notificationFilled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C08F1B7FC10C267F416C4B2E5C8B3780 /* notificationFilled@2x.png */; };
-		835ADB069D27F11DF382C64BFBE4BB67 /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80C9CA8BFD1C0EBDDF293F3DD8087FB /* error@2x.png */; };
-		8554C8B5237581A090B58858E90136FA /* warningFilled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9A773E0D85A35D0F02379E184AAC5 /* warningFilled@3x.png */; };
-		961B9CE663BBD2BE3B24CAB44CA81C5D /* warningOutline@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A6E4761D48F9AB63BB2C985D14898F /* warningOutline@1x.png */; };
-		A9626698B7118EC878C6656B6A850D1B /* notificationFilled@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2327CE7D49FD2131E4D1876C6D0379EC /* notificationFilled@1x.png */; };
+		5E6667DFC266DEE78210ED04DAA15ADE /* warningFilled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FEB7FD848CCA24C96C0FEB32CE995D3D /* warningFilled@3x.png */; };
+		6CC56C791FF49EE96BE4CFC15532338E /* LayoutConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446D1C82C6C3A59BC0A84AE661E43F2A /* LayoutConstraintsExtension.swift */; };
+		6EA7B25026ED161E4A1EF278F616673E /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2655863A6BD51867C747F20B6AFE266 /* ImageHelper.swift */; };
+		73D1EC85C9A3798D32724B254CE722DF /* error@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52E838507A5070E336EED0D720BCC33F /* error@1x.png */; };
+		7703F31C87016A4F200BBEF4171F51BA /* check@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1296C51346183E797899A43DF38A4502 /* check@1x.png */; };
+		8FC9A8CEEEA5866E12F3DA3656D99C49 /* warningOutline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD517B77845049BC8C205F265D45B05E /* warningOutline@2x.png */; };
+		957AB1A28AF371EF0B6F24804058F98D /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE95B79C2CBD582E8B25F761A1F599F /* error@2x.png */; };
+		9EF73758B8E8517BDCE9766480BCA418 /* notificationFilled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C79F4F19372CFE9987A1801F620C15C0 /* notificationFilled@3x.png */; };
+		A604487E13B901F5EDF6E6DAA99E09B7 /* warningFilled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4A45D89291757D035452F2A9AB98D3 /* warningFilled@2x.png */; };
 		AD5675F2EAA2E6B0C4BB291BFAB7D3BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		B10CF885D6376F5862C83A32D79573F1 /* notificationOutline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49093525E3F1CB9411DD25CE53B71570 /* notificationOutline@3x.png */; };
-		B70E5B348E9AA7EB66E51A2B80472C40 /* alarmFilled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC31E8303DD305B348E348554432EE42 /* alarmFilled@2x.png */; };
-		BA1411AF0D9A4F29659AE11B1510F5BF /* warningFilled@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 510FA930E2D5DB18A88EB17D82E2264A /* warningFilled@1x.png */; };
-		C53DDE4119B879BC89E3B4D7FA682656 /* check@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59EA2157F9E307F791DDD8DB629AD0CC /* check@3x.png */; };
-		D474B9436A36F8172AE2BE7276B2D142 /* Pods-BoringApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F17F5246B714AE686CA5DF4BF8E8D8 /* Pods-BoringApp-dummy.m */; };
-		D6504F869AFF211AA3E310F118A7A7CB /* error@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB6C202898D44747FC22C6B7BFDDD95 /* error@1x.png */; };
-		E5763625E630D83D52C36284F42B6590 /* alarmOutline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA3828DD11A49537C71A51691940ED /* alarmOutline@3x.png */; };
-		F5631EA472FBC4B0F3F4C56D5A8E3989 /* alarmFilled@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7B01207941552728F110F3FD29ED5D /* alarmFilled@1x.png */; };
-		F6C005C6397F25C6A97640A2055008D8 /* notificationOutline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E67885F2FCE23DDE7C4663FD8A0BEA69 /* notificationOutline@2x.png */; };
+		B436146B83836577ABED63A704D4B182 /* notificationOutline@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E9B262FB3AE4CB12E941BE2B993500D /* notificationOutline@1x.png */; };
+		C7EA8685FA8456F2A1558FC8550016E5 /* alarmFilled@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A2915F2BAB6C8EB9EAA47F16C4C75C /* alarmFilled@1x.png */; };
+		CB6B196FFA396DA659627AADA3EDB5DE /* warningOutline@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BA68F242D2336624DB24B6BFDD9B77B /* warningOutline@1x.png */; };
+		CD3B7DC8BFF6D2657BDEFBAEED84F3CC /* notificationOutline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9905FBB50B8EABADB5E2CFE8EE51E31E /* notificationOutline@3x.png */; };
+		E1C100E1FB04C1FC271E69600788AD4A /* alarmOutline@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 395B4CCD8A29FDFC0BA4B6A2669F3A85 /* alarmOutline@1x.png */; };
+		E923377394F27A710ACBBB88EBEF2EDD /* alarmFilled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFD06B52B3D6122AE86A19D41ED34278 /* alarmFilled@3x.png */; };
+		EEA376F2E67358AF44FEDCC2F80F311E /* warningOutline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D5D8AFDC1DA79C44C9B5B07DC331A10 /* warningOutline@3x.png */; };
+		F2D638EEFD9750993CD3AF012610E7FE /* alarmOutline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CDE97A9149D8178BB3EC3CE8F3ECABE /* alarmOutline@2x.png */; };
+		F824DDB7A8C885C220B9B0D6A951F02C /* alarmFilled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C88A584B852C9B51390EE0879963EB8A /* alarmFilled@2x.png */; };
+		FFB9A1886F2B957CB533F72FFB60F262 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0807C2E661F8133CF72B77386B7FBA81 /* PBXContainerItemProxy */ = {
+		14CBA6A42237306295F460165337B550 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 99AC7779AA0E07D337CFA388DF690218;
 			remoteInfo = CDAlertView;
 		};
-		2C3098BD73A93A8E4C6B8006E7DD019D /* PBXContainerItemProxy */ = {
+		4385813942912F6A01A27BB7AA336543 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F08944E713B18D3C01A791D5A3614D1F;
 			remoteInfo = "CDAlertView-CDAlertView";
 		};
+		EBE745948A60A5E2987AC3831909921F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06A674262A94713D929F3E0C9D571E49 /* alarmFilled@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmFilled@3x.png"; path = "CDAlertView/Resources/Assets/alarmFilled@3x.png"; sourceTree = "<group>"; };
-		0D50D8796DF07DEBFF6874054B4D4914 /* CDAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CDAlertView-dummy.m"; sourceTree = "<group>"; };
-		0DF140230E753B0A7D6A5A51D007378B /* CDAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertView.swift; path = CDAlertView/Classes/CDAlertView.swift; sourceTree = "<group>"; };
+		01A3455BBFDA42B63158CCD30924F63E /* error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@3x.png"; path = "CDAlertView/Resources/Assets/error@3x.png"; sourceTree = "<group>"; };
+		0982E9BF0F420EDF5791A03C9C2839F7 /* notificationOutline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationOutline@2x.png"; path = "CDAlertView/Resources/Assets/notificationOutline@2x.png"; sourceTree = "<group>"; };
+		1296C51346183E797899A43DF38A4502 /* check@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "check@1x.png"; path = "CDAlertView/Resources/Assets/check@1x.png"; sourceTree = "<group>"; };
 		17C65C738DBBA85BDB149A79DD041DF6 /* Pods-BoringApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BoringApp"; path = Pods_BoringApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CAF3C77BA6613F61B49703D3A3FCAD /* Pods-BoringApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BoringApp.modulemap"; sourceTree = "<group>"; };
-		19A2C9AA1561C4E4144878BB6B81FE8E /* CDAlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDAlertView.debug.xcconfig; sourceTree = "<group>"; };
 		229CA2C0FFD8F090760E19BC40E470D7 /* Pods-BoringApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BoringApp-frameworks.sh"; sourceTree = "<group>"; };
-		2327CE7D49FD2131E4D1876C6D0379EC /* notificationFilled@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationFilled@1x.png"; path = "CDAlertView/Resources/Assets/notificationFilled@1x.png"; sourceTree = "<group>"; };
-		2E9E4A8D01E7B50A76788C35E5C4C28B /* CDAlertHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertHeaderView.swift; path = CDAlertView/Classes/CDAlertHeaderView.swift; sourceTree = "<group>"; };
+		238A7C1AAF777291860C79A328315F19 /* CDAlertHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertHeaderView.swift; path = CDAlertView/Classes/CDAlertHeaderView.swift; sourceTree = "<group>"; };
 		326B2FB983DBD2671920B40C7F3352BA /* Pods-BoringApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BoringApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		395B4CCD8A29FDFC0BA4B6A2669F3A85 /* alarmOutline@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmOutline@1x.png"; path = "CDAlertView/Resources/Assets/alarmOutline@1x.png"; sourceTree = "<group>"; };
 		3B2FDBA6A7F22B07BEB8C533F1AB4E73 /* Pods-BoringApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BoringApp-umbrella.h"; sourceTree = "<group>"; };
-		3B4A5E04C9B8B7F850C25B409FE30F88 /* CDAlertView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDAlertView.release.xcconfig; sourceTree = "<group>"; };
-		433AC29E5B39B5485DD17A6694557934 /* CDAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CDAlertView.modulemap; sourceTree = "<group>"; };
-		45021BA2673D018F4C771F5FE00175CA /* error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@3x.png"; path = "CDAlertView/Resources/Assets/error@3x.png"; sourceTree = "<group>"; };
-		49093525E3F1CB9411DD25CE53B71570 /* notificationOutline@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationOutline@3x.png"; path = "CDAlertView/Resources/Assets/notificationOutline@3x.png"; sourceTree = "<group>"; };
+		3D5D8AFDC1DA79C44C9B5B07DC331A10 /* warningOutline@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningOutline@3x.png"; path = "CDAlertView/Resources/Assets/warningOutline@3x.png"; sourceTree = "<group>"; };
+		3E9B262FB3AE4CB12E941BE2B993500D /* notificationOutline@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationOutline@1x.png"; path = "CDAlertView/Resources/Assets/notificationOutline@1x.png"; sourceTree = "<group>"; };
+		40ACCCE0B57F64762E42DAFC96A2D62F /* CDAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CDAlertView-dummy.m"; sourceTree = "<group>"; };
+		446D1C82C6C3A59BC0A84AE661E43F2A /* LayoutConstraintsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintsExtension.swift; path = CDAlertView/Classes/LayoutConstraintsExtension.swift; sourceTree = "<group>"; };
+		45DFE2631EFF83BF68A2D2ACACEB72E9 /* CDAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDAlertView-umbrella.h"; sourceTree = "<group>"; };
+		4670470ECD94533A0E7129555529C072 /* CDAlertView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDAlertView.release.xcconfig; sourceTree = "<group>"; };
 		497444E3780E44ED4F4672834DCE1ED8 /* CDAlertView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CDAlertView; path = CDAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CE9A773E0D85A35D0F02379E184AAC5 /* warningFilled@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningFilled@3x.png"; path = "CDAlertView/Resources/Assets/warningFilled@3x.png"; sourceTree = "<group>"; };
-		50C2894D8F3538E3DCAC9A5CECE9413D /* notificationFilled@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationFilled@3x.png"; path = "CDAlertView/Resources/Assets/notificationFilled@3x.png"; sourceTree = "<group>"; };
-		510FA930E2D5DB18A88EB17D82E2264A /* warningFilled@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningFilled@1x.png"; path = "CDAlertView/Resources/Assets/warningFilled@1x.png"; sourceTree = "<group>"; };
+		4CE95B79C2CBD582E8B25F761A1F599F /* error@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@2x.png"; path = "CDAlertView/Resources/Assets/error@2x.png"; sourceTree = "<group>"; };
+		4E7AAF67DE15BEE7FFE61C1C07EFA810 /* warningFilled@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningFilled@1x.png"; path = "CDAlertView/Resources/Assets/warningFilled@1x.png"; sourceTree = "<group>"; };
+		52E838507A5070E336EED0D720BCC33F /* error@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@1x.png"; path = "CDAlertView/Resources/Assets/error@1x.png"; sourceTree = "<group>"; };
+		53A2915F2BAB6C8EB9EAA47F16C4C75C /* alarmFilled@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmFilled@1x.png"; path = "CDAlertView/Resources/Assets/alarmFilled@1x.png"; sourceTree = "<group>"; };
+		587D029833266DD243A1B2A76C6E9068 /* alarmOutline@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmOutline@3x.png"; path = "CDAlertView/Resources/Assets/alarmOutline@3x.png"; sourceTree = "<group>"; };
 		58F17F5246B714AE686CA5DF4BF8E8D8 /* Pods-BoringApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BoringApp-dummy.m"; sourceTree = "<group>"; };
-		59EA2157F9E307F791DDD8DB629AD0CC /* check@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "check@3x.png"; path = "CDAlertView/Resources/Assets/check@3x.png"; sourceTree = "<group>"; };
-		5BB6C202898D44747FC22C6B7BFDDD95 /* error@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@1x.png"; path = "CDAlertView/Resources/Assets/error@1x.png"; sourceTree = "<group>"; };
-		5D354CBA6E30BF3B8584C692C7A9F9F4 /* CDAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDAlertView-prefix.pch"; sourceTree = "<group>"; };
-		5FF6D7937093C2CFC04EC1C770E8FDA7 /* ResourceBundle-CDAlertView-CDAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CDAlertView-CDAlertView-Info.plist"; sourceTree = "<group>"; };
-		630F8D4C61F0DF6804E054D894C0CAED /* warningFilled@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningFilled@2x.png"; path = "CDAlertView/Resources/Assets/warningFilled@2x.png"; sourceTree = "<group>"; };
-		644974DBBA3BC2D105D54AFC317E373B /* ImageHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageHelper.swift; path = CDAlertView/Classes/ImageHelper.swift; sourceTree = "<group>"; };
-		67911FF5F91211E7321B2ACD9D1A0690 /* check@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "check@1x.png"; path = "CDAlertView/Resources/Assets/check@1x.png"; sourceTree = "<group>"; };
+		5CDE97A9149D8178BB3EC3CE8F3ECABE /* alarmOutline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmOutline@2x.png"; path = "CDAlertView/Resources/Assets/alarmOutline@2x.png"; sourceTree = "<group>"; };
+		5F09366DD83FDE9BE7229B62D06A1A30 /* check@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "check@2x.png"; path = "CDAlertView/Resources/Assets/check@2x.png"; sourceTree = "<group>"; };
+		6BA68F242D2336624DB24B6BFDD9B77B /* warningOutline@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningOutline@1x.png"; path = "CDAlertView/Resources/Assets/warningOutline@1x.png"; sourceTree = "<group>"; };
 		6ECEBB59305D8726A835D6E675057CB6 /* Pods-BoringApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BoringApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		77B86F9B3B194221A6A00184E78713EE /* check@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "check@2x.png"; path = "CDAlertView/Resources/Assets/check@2x.png"; sourceTree = "<group>"; };
-		7E7B01207941552728F110F3FD29ED5D /* alarmFilled@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmFilled@1x.png"; path = "CDAlertView/Resources/Assets/alarmFilled@1x.png"; sourceTree = "<group>"; };
+		71901188000274ED5E5C2DAE975F6DDC /* CDAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CDAlertView.modulemap; sourceTree = "<group>"; };
+		75B3A925D31262E90918B7447962C6F9 /* CDAlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDAlertView.debug.xcconfig; sourceTree = "<group>"; };
+		75E74DE600D6453D2967EA529EF98F78 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		938FD2082766765394E5317F1CA1ECC9 /* Pods-BoringApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BoringApp-Info.plist"; sourceTree = "<group>"; };
+		9905FBB50B8EABADB5E2CFE8EE51E31E /* notificationOutline@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationOutline@3x.png"; path = "CDAlertView/Resources/Assets/notificationOutline@3x.png"; sourceTree = "<group>"; };
 		9CBADC42B5E97FB1671C6E2C195B22F5 /* Pods-BoringApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BoringApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9D9271410AC4911A688C2C9C945D9D8E /* check@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "check@3x.png"; path = "CDAlertView/Resources/Assets/check@3x.png"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ABAF209E06E675215E93F8799C9B9A43 /* CDAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDAlertView-umbrella.h"; sourceTree = "<group>"; };
-		AC9CBD8C91B35BB590ABCE5D670671DF /* CDAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CDAlertView-Info.plist"; sourceTree = "<group>"; };
-		B0EA3828DD11A49537C71A51691940ED /* alarmOutline@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmOutline@3x.png"; path = "CDAlertView/Resources/Assets/alarmOutline@3x.png"; sourceTree = "<group>"; };
-		BBBECFABC09898B8A64468FF0B091CA1 /* notificationOutline@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationOutline@1x.png"; path = "CDAlertView/Resources/Assets/notificationOutline@1x.png"; sourceTree = "<group>"; };
-		BCD79A732AA348662C63E7E3C7C464B2 /* warningOutline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningOutline@2x.png"; path = "CDAlertView/Resources/Assets/warningOutline@2x.png"; sourceTree = "<group>"; };
-		C08F1B7FC10C267F416C4B2E5C8B3780 /* notificationFilled@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationFilled@2x.png"; path = "CDAlertView/Resources/Assets/notificationFilled@2x.png"; sourceTree = "<group>"; };
-		C3FB70D04A28D14834C7A6B6A7891CD7 /* alarmOutline@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmOutline@1x.png"; path = "CDAlertView/Resources/Assets/alarmOutline@1x.png"; sourceTree = "<group>"; };
-		C97FC7D21E2187D0728154281455F8AE /* CDAlertViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertViewType.swift; path = CDAlertView/Classes/CDAlertViewType.swift; sourceTree = "<group>"; };
-		CC31E8303DD305B348E348554432EE42 /* alarmFilled@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmFilled@2x.png"; path = "CDAlertView/Resources/Assets/alarmFilled@2x.png"; sourceTree = "<group>"; };
+		9FA354B538BD682A049D80E885CB2A7A /* notificationFilled@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationFilled@2x.png"; path = "CDAlertView/Resources/Assets/notificationFilled@2x.png"; sourceTree = "<group>"; };
+		A062F77D55A1F2822B553CDD3BCFB4C2 /* CDAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertView.swift; path = CDAlertView/Classes/CDAlertView.swift; sourceTree = "<group>"; };
+		A9DE41D1856490EFD09803877A5732F6 /* CDAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CDAlertView-Info.plist"; sourceTree = "<group>"; };
+		AE4A45D89291757D035452F2A9AB98D3 /* warningFilled@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningFilled@2x.png"; path = "CDAlertView/Resources/Assets/warningFilled@2x.png"; sourceTree = "<group>"; };
+		B2655863A6BD51867C747F20B6AFE266 /* ImageHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageHelper.swift; path = CDAlertView/Classes/ImageHelper.swift; sourceTree = "<group>"; };
+		B7618D90B811D3111134DDEE7FFE329E /* notificationFilled@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationFilled@1x.png"; path = "CDAlertView/Resources/Assets/notificationFilled@1x.png"; sourceTree = "<group>"; };
+		C04B0EF0A6450ACFA2D21384E774C408 /* CDAlertViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertViewType.swift; path = CDAlertView/Classes/CDAlertViewType.swift; sourceTree = "<group>"; };
+		C79F4F19372CFE9987A1801F620C15C0 /* notificationFilled@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationFilled@3x.png"; path = "CDAlertView/Resources/Assets/notificationFilled@3x.png"; sourceTree = "<group>"; };
+		C88A584B852C9B51390EE0879963EB8A /* alarmFilled@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmFilled@2x.png"; path = "CDAlertView/Resources/Assets/alarmFilled@2x.png"; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D3168F1C774D41D4D6A4616891FB878C /* warningOutline@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningOutline@3x.png"; path = "CDAlertView/Resources/Assets/warningOutline@3x.png"; sourceTree = "<group>"; };
-		DA8F51E8A6405C25C44FF226698AAB73 /* LayoutConstraintsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintsExtension.swift; path = CDAlertView/Classes/LayoutConstraintsExtension.swift; sourceTree = "<group>"; };
-		E1A6E4761D48F9AB63BB2C985D14898F /* warningOutline@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningOutline@1x.png"; path = "CDAlertView/Resources/Assets/warningOutline@1x.png"; sourceTree = "<group>"; };
+		D7E3341B48EDA88E7579AD10EDA52DA7 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		DBB4D07470C0F1A3FD1E9E6B224A351C /* ResourceBundle-CDAlertView-CDAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CDAlertView-CDAlertView-Info.plist"; sourceTree = "<group>"; };
+		DD517B77845049BC8C205F265D45B05E /* warningOutline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningOutline@2x.png"; path = "CDAlertView/Resources/Assets/warningOutline@2x.png"; sourceTree = "<group>"; };
+		DFD06B52B3D6122AE86A19D41ED34278 /* alarmFilled@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmFilled@3x.png"; path = "CDAlertView/Resources/Assets/alarmFilled@3x.png"; sourceTree = "<group>"; };
+		E1DB3B6BBF8BF9EDD961C6911BA31BDF /* CDAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDAlertView-prefix.pch"; sourceTree = "<group>"; };
 		E417FD65D5A1F9B3171583531D47A61C /* CDAlertView-CDAlertView */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "CDAlertView-CDAlertView"; path = CDAlertView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		E67885F2FCE23DDE7C4663FD8A0BEA69 /* notificationOutline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationOutline@2x.png"; path = "CDAlertView/Resources/Assets/notificationOutline@2x.png"; sourceTree = "<group>"; };
 		EA89ACDC4A04D0898BB5F2CC7C7AADD5 /* Pods-BoringApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BoringApp.release.xcconfig"; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EE455BA1E584CBA97B1E435FDD0D3CAE /* alarmOutline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmOutline@2x.png"; path = "CDAlertView/Resources/Assets/alarmOutline@2x.png"; sourceTree = "<group>"; };
-		F80C9CA8BFD1C0EBDDF293F3DD8087FB /* error@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@2x.png"; path = "CDAlertView/Resources/Assets/error@2x.png"; sourceTree = "<group>"; };
+		FEB7FD848CCA24C96C0FEB32CE995D3D /* warningFilled@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningFilled@3x.png"; path = "CDAlertView/Resources/Assets/warningFilled@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,46 +149,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45CB5917EFE99EADBBEF928A892FB9D2 /* Frameworks */ = {
+		4755A8280A00B405EE0E71EFE6A527EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BDCDD30691A10223889F49E9AA5002C9 /* Frameworks */ = {
+		5423C47161617EE7A1BD7F758993B8B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29A4C8681BC730518211CAE0B72D3487 /* Foundation.framework in Frameworks */,
+				FFB9A1886F2B957CB533F72FFB60F262 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07E9A681A181EA5281CF1C713BC4CB70 /* Support Files */ = {
+		01D0572B33F04E8ADA2BAC4048F3148E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				433AC29E5B39B5485DD17A6694557934 /* CDAlertView.modulemap */,
-				0D50D8796DF07DEBFF6874054B4D4914 /* CDAlertView-dummy.m */,
-				AC9CBD8C91B35BB590ABCE5D670671DF /* CDAlertView-Info.plist */,
-				5D354CBA6E30BF3B8584C692C7A9F9F4 /* CDAlertView-prefix.pch */,
-				ABAF209E06E675215E93F8799C9B9A43 /* CDAlertView-umbrella.h */,
-				19A2C9AA1561C4E4144878BB6B81FE8E /* CDAlertView.debug.xcconfig */,
-				3B4A5E04C9B8B7F850C25B409FE30F88 /* CDAlertView.release.xcconfig */,
-				5FF6D7937093C2CFC04EC1C770E8FDA7 /* ResourceBundle-CDAlertView-CDAlertView-Info.plist */,
+				D7E3341B48EDA88E7579AD10EDA52DA7 /* SwiftLint.debug.xcconfig */,
+				75E74DE600D6453D2967EA529EF98F78 /* SwiftLint.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/CDAlertView";
-			sourceTree = "<group>";
-		};
-		0D0230237E31674282BE991242D56E14 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				99117F86D672D51BFF5C9DE5CFEDA35A /* CDAlertView */,
-			);
-			name = Pods;
+			path = "../Target Support Files/SwiftLint";
 			sourceTree = "<group>";
 		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
@@ -195,6 +202,46 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		63165A8682F5E9E8AD8171AA7F73F105 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				53A2915F2BAB6C8EB9EAA47F16C4C75C /* alarmFilled@1x.png */,
+				C88A584B852C9B51390EE0879963EB8A /* alarmFilled@2x.png */,
+				DFD06B52B3D6122AE86A19D41ED34278 /* alarmFilled@3x.png */,
+				395B4CCD8A29FDFC0BA4B6A2669F3A85 /* alarmOutline@1x.png */,
+				5CDE97A9149D8178BB3EC3CE8F3ECABE /* alarmOutline@2x.png */,
+				587D029833266DD243A1B2A76C6E9068 /* alarmOutline@3x.png */,
+				1296C51346183E797899A43DF38A4502 /* check@1x.png */,
+				5F09366DD83FDE9BE7229B62D06A1A30 /* check@2x.png */,
+				9D9271410AC4911A688C2C9C945D9D8E /* check@3x.png */,
+				52E838507A5070E336EED0D720BCC33F /* error@1x.png */,
+				4CE95B79C2CBD582E8B25F761A1F599F /* error@2x.png */,
+				01A3455BBFDA42B63158CCD30924F63E /* error@3x.png */,
+				B7618D90B811D3111134DDEE7FFE329E /* notificationFilled@1x.png */,
+				9FA354B538BD682A049D80E885CB2A7A /* notificationFilled@2x.png */,
+				C79F4F19372CFE9987A1801F620C15C0 /* notificationFilled@3x.png */,
+				3E9B262FB3AE4CB12E941BE2B993500D /* notificationOutline@1x.png */,
+				0982E9BF0F420EDF5791A03C9C2839F7 /* notificationOutline@2x.png */,
+				9905FBB50B8EABADB5E2CFE8EE51E31E /* notificationOutline@3x.png */,
+				4E7AAF67DE15BEE7FFE61C1C07EFA810 /* warningFilled@1x.png */,
+				AE4A45D89291757D035452F2A9AB98D3 /* warningFilled@2x.png */,
+				FEB7FD848CCA24C96C0FEB32CE995D3D /* warningFilled@3x.png */,
+				6BA68F242D2336624DB24B6BFDD9B77B /* warningOutline@1x.png */,
+				DD517B77845049BC8C205F265D45B05E /* warningOutline@2x.png */,
+				3D5D8AFDC1DA79C44C9B5B07DC331A10 /* warningOutline@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		85DBF4A1920C624B78BB2EB7A73845ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F206AC1CD6ED34C9A60D959447ABC716 /* CDAlertView */,
+				F79D0C5DEE3CE1F55FC15249EADDDB2F /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		870C8118F194DA77D9E4CE8882A62A4A /* Pods-BoringApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,19 +259,20 @@
 			path = "Target Support Files/Pods-BoringApp";
 			sourceTree = "<group>";
 		};
-		99117F86D672D51BFF5C9DE5CFEDA35A /* CDAlertView */ = {
+		AB1EC73B0BB8DAC499AE31EABC2E93EC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E9E4A8D01E7B50A76788C35E5C4C28B /* CDAlertHeaderView.swift */,
-				0DF140230E753B0A7D6A5A51D007378B /* CDAlertView.swift */,
-				C97FC7D21E2187D0728154281455F8AE /* CDAlertViewType.swift */,
-				644974DBBA3BC2D105D54AFC317E373B /* ImageHelper.swift */,
-				DA8F51E8A6405C25C44FF226698AAB73 /* LayoutConstraintsExtension.swift */,
-				D9078816BC6A2C687439E368D6A015F8 /* Resources */,
-				07E9A681A181EA5281CF1C713BC4CB70 /* Support Files */,
+				71901188000274ED5E5C2DAE975F6DDC /* CDAlertView.modulemap */,
+				40ACCCE0B57F64762E42DAFC96A2D62F /* CDAlertView-dummy.m */,
+				A9DE41D1856490EFD09803877A5732F6 /* CDAlertView-Info.plist */,
+				E1DB3B6BBF8BF9EDD961C6911BA31BDF /* CDAlertView-prefix.pch */,
+				45DFE2631EFF83BF68A2D2ACACEB72E9 /* CDAlertView-umbrella.h */,
+				75B3A925D31262E90918B7447962C6F9 /* CDAlertView.debug.xcconfig */,
+				4670470ECD94533A0E7129555529C072 /* CDAlertView.release.xcconfig */,
+				DBB4D07470C0F1A3FD1E9E6B224A351C /* ResourceBundle-CDAlertView-CDAlertView-Info.plist */,
 			);
-			name = CDAlertView;
-			path = CDAlertView;
+			name = "Support Files";
+			path = "../Target Support Files/CDAlertView";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -232,41 +280,34 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				0D0230237E31674282BE991242D56E14 /* Pods */,
+				85DBF4A1920C624B78BB2EB7A73845ED /* Pods */,
 				F881C2CEFE654B8A756B441F1464F983 /* Products */,
 				1FD9E1932D5516E3C279DC07C98F7B36 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D9078816BC6A2C687439E368D6A015F8 /* Resources */ = {
+		F206AC1CD6ED34C9A60D959447ABC716 /* CDAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				7E7B01207941552728F110F3FD29ED5D /* alarmFilled@1x.png */,
-				CC31E8303DD305B348E348554432EE42 /* alarmFilled@2x.png */,
-				06A674262A94713D929F3E0C9D571E49 /* alarmFilled@3x.png */,
-				C3FB70D04A28D14834C7A6B6A7891CD7 /* alarmOutline@1x.png */,
-				EE455BA1E584CBA97B1E435FDD0D3CAE /* alarmOutline@2x.png */,
-				B0EA3828DD11A49537C71A51691940ED /* alarmOutline@3x.png */,
-				67911FF5F91211E7321B2ACD9D1A0690 /* check@1x.png */,
-				77B86F9B3B194221A6A00184E78713EE /* check@2x.png */,
-				59EA2157F9E307F791DDD8DB629AD0CC /* check@3x.png */,
-				5BB6C202898D44747FC22C6B7BFDDD95 /* error@1x.png */,
-				F80C9CA8BFD1C0EBDDF293F3DD8087FB /* error@2x.png */,
-				45021BA2673D018F4C771F5FE00175CA /* error@3x.png */,
-				2327CE7D49FD2131E4D1876C6D0379EC /* notificationFilled@1x.png */,
-				C08F1B7FC10C267F416C4B2E5C8B3780 /* notificationFilled@2x.png */,
-				50C2894D8F3538E3DCAC9A5CECE9413D /* notificationFilled@3x.png */,
-				BBBECFABC09898B8A64468FF0B091CA1 /* notificationOutline@1x.png */,
-				E67885F2FCE23DDE7C4663FD8A0BEA69 /* notificationOutline@2x.png */,
-				49093525E3F1CB9411DD25CE53B71570 /* notificationOutline@3x.png */,
-				510FA930E2D5DB18A88EB17D82E2264A /* warningFilled@1x.png */,
-				630F8D4C61F0DF6804E054D894C0CAED /* warningFilled@2x.png */,
-				4CE9A773E0D85A35D0F02379E184AAC5 /* warningFilled@3x.png */,
-				E1A6E4761D48F9AB63BB2C985D14898F /* warningOutline@1x.png */,
-				BCD79A732AA348662C63E7E3C7C464B2 /* warningOutline@2x.png */,
-				D3168F1C774D41D4D6A4616891FB878C /* warningOutline@3x.png */,
+				238A7C1AAF777291860C79A328315F19 /* CDAlertHeaderView.swift */,
+				A062F77D55A1F2822B553CDD3BCFB4C2 /* CDAlertView.swift */,
+				C04B0EF0A6450ACFA2D21384E774C408 /* CDAlertViewType.swift */,
+				B2655863A6BD51867C747F20B6AFE266 /* ImageHelper.swift */,
+				446D1C82C6C3A59BC0A84AE661E43F2A /* LayoutConstraintsExtension.swift */,
+				63165A8682F5E9E8AD8171AA7F73F105 /* Resources */,
+				AB1EC73B0BB8DAC499AE31EABC2E93EC /* Support Files */,
 			);
-			name = Resources;
+			name = CDAlertView;
+			path = CDAlertView;
+			sourceTree = "<group>";
+		};
+		F79D0C5DEE3CE1F55FC15249EADDDB2F /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				01D0572B33F04E8ADA2BAC4048F3148E /* Support Files */,
+			);
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 		F881C2CEFE654B8A756B441F1464F983 /* Products */ = {
@@ -290,11 +331,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C582AC2C565D73DD2614472412CE47F8 /* Headers */ = {
+		BE0FD4B0F214013A62C66D10342436BD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25C6D12EDA6C57CB0F2FB61A9E2D7FCA /* Pods-BoringApp-umbrella.h in Headers */,
+				58C02427FCD59783791F9736AB762C14 /* Pods-BoringApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +354,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4EB52486224510B32EA91081EEFF60D8 /* PBXTargetDependency */,
+				0FAC6AA8A738870A0A1A8A926C85E6F5 /* PBXTargetDependency */,
 			);
 			name = CDAlertView;
 			productName = CDAlertView;
@@ -322,17 +363,18 @@
 		};
 		DBAF8859353705A6E0C2B896ED9E341F /* Pods-BoringApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92FC033D6E4259E7DE6D57C8B8950F7A /* Build configuration list for PBXNativeTarget "Pods-BoringApp" */;
+			buildConfigurationList = 6A28421D3D01917042B0DFDF24529371 /* Build configuration list for PBXNativeTarget "Pods-BoringApp" */;
 			buildPhases = (
-				C582AC2C565D73DD2614472412CE47F8 /* Headers */,
-				020972799EE6B01BC90D7FB951AC52BE /* Sources */,
-				BDCDD30691A10223889F49E9AA5002C9 /* Frameworks */,
-				24F7E54BBF76760993981CF6D72BFD27 /* Resources */,
+				BE0FD4B0F214013A62C66D10342436BD /* Headers */,
+				958F68EC079B15E318B4993CF9D21650 /* Sources */,
+				5423C47161617EE7A1BD7F758993B8B4 /* Frameworks */,
+				2F0B2D174D85EA2634879941A714A078 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				83E18E538DCC9A6C62C0FD46019B8ED5 /* PBXTargetDependency */,
+				FCDF8CD31900D66FD57E25CD9CE9BBE8 /* PBXTargetDependency */,
+				E7ED7DC24F3AE65B5E860419499A54E4 /* PBXTargetDependency */,
 			);
 			name = "Pods-BoringApp";
 			productName = Pods_BoringApp;
@@ -341,11 +383,11 @@
 		};
 		F08944E713B18D3C01A791D5A3614D1F /* CDAlertView-CDAlertView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48E225ED46B9EEB472DF5DB726B0BF4E /* Build configuration list for PBXNativeTarget "CDAlertView-CDAlertView" */;
+			buildConfigurationList = CFAA2776D333EE48E477801EA5C0E44B /* Build configuration list for PBXNativeTarget "CDAlertView-CDAlertView" */;
 			buildPhases = (
-				2D4A7757C29F40EE88A060AA3AA0810F /* Sources */,
-				45CB5917EFE99EADBBEF928A892FB9D2 /* Frameworks */,
-				C9F01185B76F64EE866ED2507F2BA0D8 /* Resources */,
+				5425D07A244343D10FBDBD84F73C490C /* Sources */,
+				4755A8280A00B405EE0E71EFE6A527EA /* Frameworks */,
+				1AAD1A385798FE198F49C0338BB8A056 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -366,7 +408,7 @@
 				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -381,12 +423,44 @@
 				99AC7779AA0E07D337CFA388DF690218 /* CDAlertView */,
 				F08944E713B18D3C01A791D5A3614D1F /* CDAlertView-CDAlertView */,
 				DBAF8859353705A6E0C2B896ED9E341F /* Pods-BoringApp */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		24F7E54BBF76760993981CF6D72BFD27 /* Resources */ = {
+		1AAD1A385798FE198F49C0338BB8A056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7EA8685FA8456F2A1558FC8550016E5 /* alarmFilled@1x.png in Resources */,
+				F824DDB7A8C885C220B9B0D6A951F02C /* alarmFilled@2x.png in Resources */,
+				E923377394F27A710ACBBB88EBEF2EDD /* alarmFilled@3x.png in Resources */,
+				E1C100E1FB04C1FC271E69600788AD4A /* alarmOutline@1x.png in Resources */,
+				F2D638EEFD9750993CD3AF012610E7FE /* alarmOutline@2x.png in Resources */,
+				3AE7623563D8C5A48A748AEB46A44473 /* alarmOutline@3x.png in Resources */,
+				7703F31C87016A4F200BBEF4171F51BA /* check@1x.png in Resources */,
+				081AE27BF5E6454843BE8D48E8DDC6C8 /* check@2x.png in Resources */,
+				1C1873A08D43196D59F47C1F335F3549 /* check@3x.png in Resources */,
+				73D1EC85C9A3798D32724B254CE722DF /* error@1x.png in Resources */,
+				957AB1A28AF371EF0B6F24804058F98D /* error@2x.png in Resources */,
+				25B24C3AAB152F4C4A20C6622267D7DC /* error@3x.png in Resources */,
+				3D723D5302F2E3745479B6AA24F32401 /* notificationFilled@1x.png in Resources */,
+				4C0A6C100F3832813B2E17E8C4F2E3CE /* notificationFilled@2x.png in Resources */,
+				9EF73758B8E8517BDCE9766480BCA418 /* notificationFilled@3x.png in Resources */,
+				B436146B83836577ABED63A704D4B182 /* notificationOutline@1x.png in Resources */,
+				3529D226CFE8DF184B438E96DEEDE361 /* notificationOutline@2x.png in Resources */,
+				CD3B7DC8BFF6D2657BDEFBAEED84F3CC /* notificationOutline@3x.png in Resources */,
+				3E77FC68811F0DA196AAA5C33C5CE367 /* warningFilled@1x.png in Resources */,
+				A604487E13B901F5EDF6E6DAA99E09B7 /* warningFilled@2x.png in Resources */,
+				5E6667DFC266DEE78210ED04DAA15ADE /* warningFilled@3x.png in Resources */,
+				CB6B196FFA396DA659627AADA3EDB5DE /* warningOutline@1x.png in Resources */,
+				8FC9A8CEEEA5866E12F3DA3656D99C49 /* warningOutline@2x.png in Resources */,
+				EEA376F2E67358AF44FEDCC2F80F311E /* warningOutline@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0B2D174D85EA2634879941A714A078 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,52 +475,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9F01185B76F64EE866ED2507F2BA0D8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F5631EA472FBC4B0F3F4C56D5A8E3989 /* alarmFilled@1x.png in Resources */,
-				B70E5B348E9AA7EB66E51A2B80472C40 /* alarmFilled@2x.png in Resources */,
-				0FB0D215D1E124B042266F226E33A8CB /* alarmFilled@3x.png in Resources */,
-				1CC6C4E41E1F8B87E563DD9589FACBA1 /* alarmOutline@1x.png in Resources */,
-				67D4EB06FE02D27ED07E7125D55DE251 /* alarmOutline@2x.png in Resources */,
-				E5763625E630D83D52C36284F42B6590 /* alarmOutline@3x.png in Resources */,
-				6D69FEEE261EC274881BF688EFE2DCB3 /* check@1x.png in Resources */,
-				3B3B0D6F6C86E675184DD7FD81B14879 /* check@2x.png in Resources */,
-				C53DDE4119B879BC89E3B4D7FA682656 /* check@3x.png in Resources */,
-				D6504F869AFF211AA3E310F118A7A7CB /* error@1x.png in Resources */,
-				835ADB069D27F11DF382C64BFBE4BB67 /* error@2x.png in Resources */,
-				485091B4A3041FC761256C90EAF700CD /* error@3x.png in Resources */,
-				A9626698B7118EC878C6656B6A850D1B /* notificationFilled@1x.png in Resources */,
-				719104676792CF1C67DDD2F1F03FF5AF /* notificationFilled@2x.png in Resources */,
-				628EF6037A617CA974E6AB2247CE35A6 /* notificationFilled@3x.png in Resources */,
-				1461FC43C8FE96419BAE4411378C8632 /* notificationOutline@1x.png in Resources */,
-				F6C005C6397F25C6A97640A2055008D8 /* notificationOutline@2x.png in Resources */,
-				B10CF885D6376F5862C83A32D79573F1 /* notificationOutline@3x.png in Resources */,
-				BA1411AF0D9A4F29659AE11B1510F5BF /* warningFilled@1x.png in Resources */,
-				2305558946CB5471799926E7BDD8563A /* warningFilled@2x.png in Resources */,
-				8554C8B5237581A090B58858E90136FA /* warningFilled@3x.png in Resources */,
-				961B9CE663BBD2BE3B24CAB44CA81C5D /* warningOutline@1x.png in Resources */,
-				00962B6EBA32826A37C3CE79E2FDCD17 /* warningOutline@2x.png in Resources */,
-				6A1668A806831C811C508480E3F86B83 /* warningOutline@3x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		020972799EE6B01BC90D7FB951AC52BE /* Sources */ = {
+		5425D07A244343D10FBDBD84F73C490C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D474B9436A36F8172AE2BE7276B2D142 /* Pods-BoringApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D4A7757C29F40EE88A060AA3AA0810F /* Sources */ = {
+		958F68EC079B15E318B4993CF9D21650 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F11EC174AF83755CE3437361C0486A5 /* Pods-BoringApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,24 +509,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4EB52486224510B32EA91081EEFF60D8 /* PBXTargetDependency */ = {
+		0FAC6AA8A738870A0A1A8A926C85E6F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "CDAlertView-CDAlertView";
 			target = F08944E713B18D3C01A791D5A3614D1F /* CDAlertView-CDAlertView */;
-			targetProxy = 2C3098BD73A93A8E4C6B8006E7DD019D /* PBXContainerItemProxy */;
+			targetProxy = 4385813942912F6A01A27BB7AA336543 /* PBXContainerItemProxy */;
 		};
-		83E18E538DCC9A6C62C0FD46019B8ED5 /* PBXTargetDependency */ = {
+		E7ED7DC24F3AE65B5E860419499A54E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = EBE745948A60A5E2987AC3831909921F /* PBXContainerItemProxy */;
+		};
+		FCDF8CD31900D66FD57E25CD9CE9BBE8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CDAlertView;
 			target = 99AC7779AA0E07D337CFA388DF690218 /* CDAlertView */;
-			targetProxy = 0807C2E661F8133CF72B77386B7FBA81 /* PBXContainerItemProxy */;
+			targetProxy = 14CBA6A42237306295F460165337B550 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		070D5FC1448B7C5AC274A27143898526 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4A5E04C9B8B7F850C25B409FE30F88 /* CDAlertView.release.xcconfig */;
+			baseConfigurationReference = 4670470ECD94533A0E7129555529C072 /* CDAlertView.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -517,7 +566,58 @@
 			};
 			name = Release;
 		};
-		3EC1D9EA9C7A3FE41673ABB2D16F3D75 /* Debug */ = {
+		1BBD388B3E3DF2A5D128BC0EA8B1B5AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B3A925D31262E90918B7447962C6F9 /* CDAlertView.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CDAlertView";
+				IBSC_MODULE = CDAlertView;
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/ResourceBundle-CDAlertView-CDAlertView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = CDAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6944B32A467FAFAA9703AA822E9F3FD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B3A925D31262E90918B7447962C6F9 /* CDAlertView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CDAlertView/CDAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/CDAlertView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CDAlertView/CDAlertView.modulemap";
+				PRODUCT_MODULE_NAME = CDAlertView;
+				PRODUCT_NAME = CDAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81BD89143E90A3728849D8C5B72C448F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9CBADC42B5E97FB1671C6E2C195B22F5 /* Pods-BoringApp.debug.xcconfig */;
 			buildSettings = {
@@ -554,26 +654,11 @@
 			};
 			name = Debug;
 		};
-		4F31C1CE5DC9C0A20640047AFC48AE0F /* Debug */ = {
+		87507D8EEB627EEC0C9174AC328E1A67 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19A2C9AA1561C4E4144878BB6B81FE8E /* CDAlertView.debug.xcconfig */;
+			baseConfigurationReference = EA89ACDC4A04D0898BB5F2CC7C7AADD5 /* Pods-BoringApp.release.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CDAlertView";
-				IBSC_MODULE = CDAlertView;
-				INFOPLIST_FILE = "Target Support Files/CDAlertView/ResourceBundle-CDAlertView-CDAlertView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_NAME = CDAlertView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		6944B32A467FAFAA9703AA822E9F3FD0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19A2C9AA1561C4E4144878BB6B81FE8E /* CDAlertView.debug.xcconfig */;
-			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -583,27 +668,29 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CDAlertView/CDAlertView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CDAlertView/CDAlertView-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BoringApp/Pods-BoringApp-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/CDAlertView/CDAlertView.modulemap";
-				PRODUCT_MODULE_NAME = CDAlertView;
-				PRODUCT_NAME = CDAlertView;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BoringApp/Pods-BoringApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -733,47 +820,26 @@
 			};
 			name = Release;
 		};
-		B1BBA3CAF056927C2F1A4EC2A51DAF49 /* Release */ = {
+		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA89ACDC4A04D0898BB5F2CC7C7AADD5 /* Pods-BoringApp.release.xcconfig */;
+			baseConfigurationReference = 75E74DE600D6453D2967EA529EF98F78 /* SwiftLint.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BoringApp/Pods-BoringApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BoringApp/Pods-BoringApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		DFC1BEFD97F746F0A951DA7332A03793 /* Release */ = {
+		B25B49A7F1A09AA3BF51C0C731AE5D16 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4A5E04C9B8B7F850C25B409FE30F88 /* CDAlertView.release.xcconfig */;
+			baseConfigurationReference = 4670470ECD94533A0E7129555529C072 /* CDAlertView.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CDAlertView";
 				IBSC_MODULE = CDAlertView;
@@ -787,6 +853,22 @@
 			};
 			name = Release;
 		};
+		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E3341B48EDA88E7579AD10EDA52DA7 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -795,15 +877,6 @@
 			buildConfigurations = (
 				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
 				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		48E225ED46B9EEB472DF5DB726B0BF4E /* Build configuration list for PBXNativeTarget "CDAlertView-CDAlertView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4F31C1CE5DC9C0A20640047AFC48AE0F /* Debug */,
-				DFC1BEFD97F746F0A951DA7332A03793 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -817,11 +890,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92FC033D6E4259E7DE6D57C8B8950F7A /* Build configuration list for PBXNativeTarget "Pods-BoringApp" */ = {
+		6A28421D3D01917042B0DFDF24529371 /* Build configuration list for PBXNativeTarget "Pods-BoringApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3EC1D9EA9C7A3FE41673ABB2D16F3D75 /* Debug */,
-				B1BBA3CAF056927C2F1A4EC2A51DAF49 /* Release */,
+				81BD89143E90A3728849D8C5B72C448F /* Debug */,
+				87507D8EEB627EEC0C9174AC328E1A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */,
+				AD81E62ACCB0B7A923FC8AA288F9921E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFAA2776D333EE48E477801EA5C0E44B /* Build configuration list for PBXNativeTarget "CDAlertView-CDAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BBD388B3E3DF2A5D128BC0EA8B1B5AB /* Debug */,
+				B25B49A7F1A09AA3BF51C0C731AE5D16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

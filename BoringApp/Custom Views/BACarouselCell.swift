@@ -8,35 +8,35 @@
 import UIKit
 
 class BACarouselCell: UICollectionViewCell {
-    
+
     // MARK: - SubViews
-    
+
     private lazy var cardView = UIView()
-    
+
     private lazy var typeView = UIView()
     private lazy var typeLabel = UILabel()
-    
+
     private lazy var textField = UITextView()
-    
+
     private lazy var stackView = UIStackView()
-    
+
     private lazy var participantImage = UIImageView()
     private lazy var numberOfParticipantsLabel = UILabel()
-    
+
     private lazy var priceImage = UIImageView()
     private lazy var priceLabel = UILabel()
-    
+
     // MARK: - Properties
-    
+
     static let cellID = "CarouselCell"
-    
+
     // MARK: - Initializer
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupUI()
@@ -50,7 +50,7 @@ private extension BACarouselCell {
         backgroundColor = .clear
         setupCardView()
     }
-    
+
     private func setupCardView() {
         addSubview(cardView)
         cardView.translatesAutoresizingMaskIntoConstraints = false
@@ -65,13 +65,13 @@ private extension BACarouselCell {
         cardView.layer.shadowColor = UIColor.black.cgColor
         cardView.layer.cornerCurve = .continuous
         cardView.layer.cornerRadius = 12
-        
+
         setupTypeView()
         setupTextView()
         setupParticipantView()
         setupPriceView()
     }
-    
+
     private func setupTypeView() {
         cardView.addSubview(typeView)
         typeView.translatesAutoresizingMaskIntoConstraints = false
@@ -82,7 +82,7 @@ private extension BACarouselCell {
         typeView.layer.cornerCurve = .continuous
         typeView.layer.cornerRadius = 12
         typeView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMinYCorner]
-        
+
         typeView.addSubview(typeLabel)
         typeLabel.translatesAutoresizingMaskIntoConstraints = false
         typeLabel.topAnchor.constraint(equalTo: typeView.topAnchor, constant: 2).isActive = true
@@ -91,7 +91,7 @@ private extension BACarouselCell {
         typeLabel.trailingAnchor.constraint(equalTo: typeView.trailingAnchor, constant: -12).isActive = true
         typeLabel.textColor = .white
     }
-    
+
     private func setupTextView() {
         cardView.addSubview(textField)
         textField.translatesAutoresizingMaskIntoConstraints = false
@@ -102,7 +102,7 @@ private extension BACarouselCell {
         textField.font = UIFont.preferredFont(forTextStyle: .largeTitle)
         textField.textAlignment = .natural
     }
-    
+
     private func setupParticipantView() {
         cardView.addSubview(participantImage)
         participantImage.translatesAutoresizingMaskIntoConstraints = false
@@ -112,27 +112,28 @@ private extension BACarouselCell {
         participantImage.heightAnchor.constraint(equalToConstant: 24).isActive = true
         participantImage.image = UIImage(systemName: "person.fill")
         participantImage.tintColor = .black
-        
+
         cardView.addSubview(numberOfParticipantsLabel)
         numberOfParticipantsLabel.translatesAutoresizingMaskIntoConstraints = false
-        numberOfParticipantsLabel.leadingAnchor.constraint(equalTo: participantImage.trailingAnchor, constant: 6).isActive = true
+        numberOfParticipantsLabel.leadingAnchor.constraint(equalTo: participantImage.trailingAnchor,
+                                                           constant: 6).isActive = true
         numberOfParticipantsLabel.centerYAnchor.constraint(equalTo: participantImage.centerYAnchor).isActive = true
         numberOfParticipantsLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
     }
-    
+
     private func setupPriceView() {
         cardView.addSubview(priceImage)
         cardView.addSubview(priceLabel)
-        
+
         priceImage.translatesAutoresizingMaskIntoConstraints = false
         priceLabel.translatesAutoresizingMaskIntoConstraints = false
-        
+
         priceImage.bottomAnchor.constraint(equalTo: cardView.bottomAnchor, constant: -6).isActive = true
         priceImage.widthAnchor.constraint(equalToConstant: 24).isActive = true
         priceImage.heightAnchor.constraint(equalToConstant: 24).isActive = true
         priceImage.image = UIImage(systemName: "dollarsign.circle")
         priceImage.tintColor = .black
-        
+
         priceLabel.leadingAnchor.constraint(equalTo: priceImage.trailingAnchor, constant: 6).isActive = true
         priceLabel.centerYAnchor.constraint(equalTo: priceImage.centerYAnchor).isActive = true
         priceLabel.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -6).isActive = true
@@ -147,7 +148,7 @@ extension BACarouselCell {
         typeLabel.text = capitalizedTypeLabel
         textField.text = activity
         numberOfParticipantsLabel.text = String(participants)
-        
+
         switch price {
         case 0..<0.1:
             priceLabel.text = "free"
@@ -162,4 +163,3 @@ extension BACarouselCell {
         }
     }
 }
-

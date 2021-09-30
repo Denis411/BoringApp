@@ -9,7 +9,6 @@ import UIKit
 import CDAlertView
 
 extension UIViewController {
-    
     func presentBAAlertOnMainThread(title: String, message: String, errorType: CDAlertViewType) {
         DispatchQueue.main.async {
             let alert = CDAlertView(title: title, message: message, type: errorType)

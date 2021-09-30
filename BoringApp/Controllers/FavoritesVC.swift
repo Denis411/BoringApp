@@ -8,12 +8,12 @@
 import UIKit
 
 class FavoritesVC: UIViewController {
-    
+
     private var carouselView: BACarouselView?
-    
+
     private var favorites: [Activity] = []
     private var carouselData = [BACarouselView.BACarouselData]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         getFavorites()
@@ -21,11 +21,11 @@ class FavoritesVC: UIViewController {
         carouselView = BACarouselView(pages: carouselData.count)
         setupUI()
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         carouselView?.configureView(with: carouselData)
     }
-    
+
     @IBAction func deleteButtonPressed(_ sender: UIButton) {
         let activity = favorites[carouselView!.currentPage]
         PersistenceManager.updateWith(favorite: activity, actionType: .remove) { error in
@@ -42,11 +42,11 @@ class FavoritesVC: UIViewController {
             self.presentBAAlertOnMainThread(title: "Can`t delete activity", message: error.rawValue, errorType: .error)
         }
     }
-    
+
     @IBAction func backwardButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
-    
+
     private func setupUI() {
         guard let carouselView = carouselView else { return }
         view.addSubview(carouselView)
@@ -56,22 +56,27 @@ class FavoritesVC: UIViewController {
         carouselView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         carouselView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -130).isActive = true
     }
-    
+
     private func loadData() {
         for activity in favorites {
-            carouselData.append(.init(type: activity.type, activity: activity.activity, participants: activity.participants, price: activity.price))
+            carouselData.append(.init(type: activity.type,
+                                      activity: activity.activity,
+                                      participants: activity.participants,
+                                      price: activity.price))
         }
     }
-    
+
     private func getFavorites() {
         PersistenceManager.retrieveFavorites { [weak self] result in
             guard let self = self else { return }
-            
+
             switch result {
             case .success(let favorites):
                 self.favorites = favorites
             case .failure(let error):
-                self.presentBAAlertOnMainThread(title: "Something went wrong", message: error.rawValue, errorType: .error)
+                self.presentBAAlertOnMainThread(title: "Something went wrong",
+                                                message: error.rawValue,
+                                                errorType: .error)
             }
         }
     }

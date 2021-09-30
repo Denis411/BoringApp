@@ -12,14 +12,16 @@ enum PersistenceActionType {
 }
 
 enum PersistenceManager {
-    
+
     static private let defaults = UserDefaults.standard
-    
+
     enum Keys {
         static let favorites = "favorites"
     }
-    
-    static func updateWith(favorite: Activity, actionType: PersistenceActionType, completed: @escaping (BAError?) -> Void) {
+
+    static func updateWith(favorite: Activity,
+                           actionType: PersistenceActionType,
+                           completed: @escaping (BAError?) -> Void) {
         retrieveFavorites { result in
             switch result {
             case .success(var favorites):
@@ -29,26 +31,25 @@ enum PersistenceManager {
                         completed(.alreadyInFavorites)
                         return
                     }
-                    
                     favorites.append(favorite)
                 case .remove:
                     favorites.removeAll { $0.activity == favorite.activity }
                 }
-                
+
                 completed(save(favorites: favorites))
-                
+
             case .failure(let error):
                 completed(error)
             }
         }
     }
-    
+
     static func retrieveFavorites(completed: @escaping (Result<[Activity], BAError>) -> Void) {
         guard let favoriteData = defaults.object(forKey: Keys.favorites) as? Data else {
             completed(.success([]))
             return
         }
-        
+
         do {
             let decoder = JSONDecoder()
             let favorites = try decoder.decode([Activity].self, from: favoriteData)
@@ -57,7 +58,7 @@ enum PersistenceManager {
             completed(.failure(.unableToFavorite))
         }
     }
-    
+
     static func save(favorites: [Activity]) -> BAError? {
         do {
             let encoder = JSONEncoder()

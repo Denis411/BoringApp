@@ -7,5 +7,6 @@ target 'BoringApp' do
 
   # Pods for BoringApp
   pod "CDAlertView"  
+  pod 'SwiftLint'
 
 end

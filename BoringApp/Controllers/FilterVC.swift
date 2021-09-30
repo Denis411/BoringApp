@@ -8,36 +8,36 @@
 import UIKit
 import SwiftUI
 
-protocol FilterVCDelegate {
+protocol FilterVCDelegate: AnyObject {
     func filterUpdated(_ filter: Filter)
     func modalViewDidDismiss()
 }
 
 class FilterVC: UIViewController {
-    
+
     @IBOutlet var typeButtonsCollection: [BAFilterTypeButton]!
     @IBOutlet weak var allTypeButton: BAFilterTypeButton!
     @IBOutlet weak var participantsNumberTextField: UITextField!
     @IBOutlet weak var priceSelector: UISegmentedControl!
-    
-    var delegate: FilterVCDelegate?
-    
+
+    weak var delegate: FilterVCDelegate?
+
     public var requestFilter = Filter()
     private var userSelectedTypes: [String] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
         createDismissKeyboardTapGesture()
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         prepareFilter()
         delegate?.filterUpdated(requestFilter)
         delegate?.modalViewDidDismiss()
     }
-    
+
     @IBAction func tappedAllTypesButton(_ sender: BAFilterTypeButton) {
         if !sender.buttonSelected {
             sender.buttonSelected = true
@@ -47,7 +47,7 @@ class FilterVC: UIViewController {
             userSelectedTypes.removeAll()
         }
     }
-    
+
     @IBAction func tappedFilterTypeButton(_ sender: BAFilterTypeButton) {
         if sender.buttonSelected {
             sender.buttonSelected = false
@@ -60,12 +60,12 @@ class FilterVC: UIViewController {
             sender.buttonSelected = true
             userSelectedTypes.append(sender.titleLabel!.text!.lowercased())
         }
-        
+
         if userSelectedTypes.isEmpty {
             allTypeButton.buttonSelected = true
         }
     }
-    
+
     @IBAction func priceChanged(_ sender: UISegmentedControl) {
         switch priceSelector.selectedSegmentIndex {
         case 0:
@@ -82,12 +82,17 @@ class FilterVC: UIViewController {
             break
         }
     }
-    
+
     private func updateUI() {
         for index in 0..<typeButtonsCollection.count {
             typeButtonsCollection[index].buttonSelected = false
         }
-        
+        updateTypeButtonCollection()
+        updateParticipantsTextField()
+        updatePriceSelector()
+    }
+
+    private func updateTypeButtonCollection() {
         if let types = requestFilter.selectedTypes {
             if !types.isEmpty {
                 allTypeButton.buttonSelected = false
@@ -106,25 +111,29 @@ class FilterVC: UIViewController {
                 typeButtonsCollection[index].buttonSelected = false
             }
         }
-        
+    }
+
+    private func updateParticipantsTextField() {
         if let participants = requestFilter.participants {
             participantsNumberTextField.text = String(participants)
         }
-        
+    }
+
+    private func updatePriceSelector() {
         if let price = requestFilter.price {
             switch price {
-            case .free(_):
+            case .free:
                 priceSelector.selectedSegmentIndex = 1
-            case .cheap(_, _):
+            case .cheap:
                 priceSelector.selectedSegmentIndex = 2
-            case .average(_, _):
+            case .average:
                 priceSelector.selectedSegmentIndex = 3
-            case .pricey(_, _):
+            case .pricey:
                 priceSelector.selectedSegmentIndex = 4
             }
         }
     }
-    
+
     private func prepareFilter() {
         if !userSelectedTypes.isEmpty {
             requestFilter.selectedTypes = userSelectedTypes
@@ -136,9 +145,9 @@ class FilterVC: UIViewController {
         } else {
             requestFilter.participants = nil
         }
-        
+
     }
-    
+
     private func createDismissKeyboardTapGesture() {
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
